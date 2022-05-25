@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.12.18)  16 MAY 2022 14:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.12.18)  25 MAY 2022 18:45
 entering extended mode
 **./fisica.tex
 (fisica.tex
@@ -467,77 +467,81 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<meme_MHS.jpg, id=1, 388.45125pt x 193.47281pt>
-File: meme_MHS.jpg Graphic file (type jpg)
-<use meme_MHS.jpg>
-Package pdftex.def Info: meme_MHS.jpg  used on input line 38.
+<figures/meme_MHS.jpg, id=1, 388.45125pt x 193.47281pt>
+File: figures/meme_MHS.jpg Graphic file (type jpg)
+<use figures/meme_MHS.jpg>
+Package pdftex.def Info: figures/meme_MHS.jpg  used on input line 38.
 (pdftex.def)             Requested size: 145.11053pt x 72.27461pt.
  [1
 
-{C:/Users/usuario/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./meme_MH
-S.jpg>] [2]
-<Energia_MAS.png, id=22, 400.49625pt x 182.6825pt>
-File: Energia_MAS.png Graphic file (type png)
-<use Energia_MAS.png>
-Package pdftex.def Info: Energia_MAS.png  used on input line 146.
+{C:/Users/usuario/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./figures
+/meme_MHS.jpg>]
+[2]
+<figures/Energia_MAS.png, id=22, 400.49625pt x 182.6825pt>
+File: figures/Energia_MAS.png Graphic file (type png)
+<use figures/Energia_MAS.png>
+Package pdftex.def Info: figures/Energia_MAS.png  used on input line 146.
 (pdftex.def)             Requested size: 241.84843pt x 110.31836pt.
-<onda-reflejada.jpg, id=24, 283.81032pt x 128.73094pt>
-File: onda-reflejada.jpg Graphic file (type jpg)
-<use onda-reflejada.jpg>
-Package pdftex.def Info: onda-reflejada.jpg  used on input line 155.
+<figures/onda-reflejada.jpg, id=24, 283.81032pt x 128.73094pt>
+File: figures/onda-reflejada.jpg Graphic file (type jpg)
+<use figures/onda-reflejada.jpg>
+Package pdftex.def Info: figures/onda-reflejada.jpg  used on input line 155.
 (pdftex.def)             Requested size: 193.47578pt x 87.7598pt.
-<refraccion-ondas1.jpg, id=25, 470.50781pt x 218.31563pt>
-File: refraccion-ondas1.jpg Graphic file (type jpg)
-<use refraccion-ondas1.jpg>
-Package pdftex.def Info: refraccion-ondas1.jpg  used on input line 167.
+<figures/refraccion-ondas1.jpg, id=25, 470.50781pt x 218.31563pt>
+File: figures/refraccion-ondas1.jpg Graphic file (type jpg)
+<use figures/refraccion-ondas1.jpg>
+Package pdftex.def Info: figures/refraccion-ondas1.jpg  used on input line 167.
+
 (pdftex.def)             Requested size: 241.84843pt x 112.21893pt.
-
-[3 <./Energia_MAS.png> <./onda-reflejada.jpg> <./refraccion-ondas1.jpg>]
-<difraccion-ondas.jpg, id=30, 445.665pt x 225.84375pt>
-File: difraccion-ondas.jpg Graphic file (type jpg)
-<use difraccion-ondas.jpg>
-Package pdftex.def Info: difraccion-ondas.jpg  used on input line 185.
+ [3 <./figures/Energia_MAS.png> <./figures/onda-reflejada.jpg> <./figures/refra
+ccion-ondas1.jpg>]
+<figures/difraccion-ondas.jpg, id=30, 445.665pt x 225.84375pt>
+File: figures/difraccion-ondas.jpg Graphic file (type jpg)
+<use figures/difraccion-ondas.jpg>
+Package pdftex.def Info: figures/difraccion-ondas.jpg  used on input line 185.
 (pdftex.def)             Requested size: 241.84843pt x 122.5603pt.
-
-[4 <./difraccion-ondas.jpg>]
-<onda-estacionaria-cuerda-fija.jpg, id=35, 617.30624pt x 523.9575pt>
-File: onda-estacionaria-cuerda-fija.jpg Graphic file (type jpg)
-<use onda-estacionaria-cuerda-fija.jpg>
-Package pdftex.def Info: onda-estacionaria-cuerda-fija.jpg  used on input line 
-223.
+ [4 <./figures/difraccion-ondas.jpg>]
+<figures/onda-estacionaria-cuerda-fija.jpg, id=35, 617.30624pt x 523.9575pt>
+File: figures/onda-estacionaria-cuerda-fija.jpg Graphic file (type jpg)
+<use figures/onda-estacionaria-cuerda-fija.jpg>
+Package pdftex.def Info: figures/onda-estacionaria-cuerda-fija.jpg  used on inp
+ut line 223.
 (pdftex.def)             Requested size: 290.22107pt x 246.34001pt.
- [5 <./onda-estacionaria-cuerda-fija.jpg>]
-<efecto-doppler-2.jpg, id=39, 117.22726pt x 69.61124pt>
-File: efecto-doppler-2.jpg Graphic file (type jpg)
-<use efecto-doppler-2.jpg>
-Package pdftex.def Info: efecto-doppler-2.jpg  used on input line 291.
+ [5 <./figures/onda-estacionaria-cuerda-fija.jpg>]
+<figures/efecto-doppler-2.jpg, id=39, 117.22726pt x 69.61124pt>
+File: figures/efecto-doppler-2.jpg Graphic file (type jpg)
+<use figures/efecto-doppler-2.jpg>
+Package pdftex.def Info: figures/efecto-doppler-2.jpg  used on input line 291.
 (pdftex.def)             Requested size: 241.84843pt x 143.62271pt.
- [6 <./efecto-doppler-2.jpg>]
-<segunda-ley-kepler.jpg, id=45, 439.6425pt x 250.9375pt>
-File: segunda-ley-kepler.jpg Graphic file (type jpg)
-<use segunda-ley-kepler.jpg>
-Package pdftex.def Info: segunda-ley-kepler.jpg  used on input line 323.
+ [6 <./figures/efecto-doppler-2.jpg>]
+<figures/segunda-ley-kepler.jpg, id=45, 439.6425pt x 250.9375pt>
+File: figures/segunda-ley-kepler.jpg Graphic file (type jpg)
+<use figures/segunda-ley-kepler.jpg>
+Package pdftex.def Info: figures/segunda-ley-kepler.jpg  used on input line 323
+.
 (pdftex.def)             Requested size: 241.84843pt x 138.03902pt.
- [7 <./segunda-ley-kepler.jpg>]
-<energia-mecanica-negativa.png, id=52, 652.4375pt x 262.9825pt>
-File: energia-mecanica-negativa.png Graphic file (type png)
-<use energia-mecanica-negativa.png>
-Package pdftex.def Info: energia-mecanica-negativa.png  used on input line 376.
-
+ [7 <./figures/segunda-ley-kepler.jpg>]
+<figures/energia-mecanica-negativa.png, id=52, 652.4375pt x 262.9825pt>
+File: figures/energia-mecanica-negativa.png Graphic file (type png)
+<use figures/energia-mecanica-negativa.png>
+Package pdftex.def Info: figures/energia-mecanica-negativa.png  used on input l
+ine 376.
 (pdftex.def)             Requested size: 290.22107pt x 116.9847pt.
-<energia-mecanica-nula.png, id=53, 652.4375pt x 262.9825pt>
-File: energia-mecanica-nula.png Graphic file (type png)
-<use energia-mecanica-nula.png>
-Package pdftex.def Info: energia-mecanica-nula.png  used on input line 385.
+<figures/energia-mecanica-nula.png, id=53, 652.4375pt x 262.9825pt>
+File: figures/energia-mecanica-nula.png Graphic file (type png)
+<use figures/energia-mecanica-nula.png>
+Package pdftex.def Info: figures/energia-mecanica-nula.png  used on input line 
+385.
 (pdftex.def)             Requested size: 290.22107pt x 116.9847pt.
- [8 <./energia-mecanica-negativa.png> <./energia-mecanica-nula.png>]
-<energia-mecanica-positiva.png, id=59, 652.4375pt x 262.9825pt>
-File: energia-mecanica-positiva.png Graphic file (type png)
-<use energia-mecanica-positiva.png>
-Package pdftex.def Info: energia-mecanica-positiva.png  used on input line 395.
-
+ [8 <./figures/energia-mecanica-negativa.png> <./figures/energia-mecanica-nula.
+png>]
+<figures/energia-mecanica-positiva.png, id=59, 652.4375pt x 262.9825pt>
+File: figures/energia-mecanica-positiva.png Graphic file (type png)
+<use figures/energia-mecanica-positiva.png>
+Package pdftex.def Info: figures/energia-mecanica-positiva.png  used on input l
+ine 395.
 (pdftex.def)             Requested size: 290.22107pt x 116.9847pt.
- [9 <./energia-mecanica-positiva.png>]
+ [9 <./figures/energia-mecanica-positiva.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 490--491
 
  []
@@ -553,41 +557,43 @@ Underfull \hbox (badness 10000) in paragraph at lines 500--501
  []
 
 [10] [11] [12]
-<potencial-e-intensidad.png, id=75, 169.76175pt x 70.08736pt>
-File: potencial-e-intensidad.png Graphic file (type png)
-<use potencial-e-intensidad.png>
-Package pdftex.def Info: potencial-e-intensidad.png  used on input line 600.
+<figures/potencial-e-intensidad.png, id=75, 169.76175pt x 70.08736pt>
+File: figures/potencial-e-intensidad.png Graphic file (type png)
+<use figures/potencial-e-intensidad.png>
+Package pdftex.def Info: figures/potencial-e-intensidad.png  used on input line
+ 600.
 (pdftex.def)             Requested size: 290.22107pt x 119.82707pt.
-<sintesis-electromagnetica.jpg, id=76, 600.2425pt x 292.09125pt>
-File: sintesis-electromagnetica.jpg Graphic file (type jpg)
-<use sintesis-electromagnetica.jpg>
-Package pdftex.def Info: sintesis-electromagnetica.jpg  used on input line 617.
-
+<figures/sintesis-electromagnetica.jpg, id=76, 600.2425pt x 292.09125pt>
+File: figures/sintesis-electromagnetica.jpg Graphic file (type jpg)
+<use figures/sintesis-electromagnetica.jpg>
+Package pdftex.def Info: figures/sintesis-electromagnetica.jpg  used on input l
+ine 617.
 (pdftex.def)             Requested size: 193.47578pt x 94.14856pt.
- [13 <./potencial-e-intensidad.png> <./sintesis-electromagnetica.jpg>]
-<magnetico_linea.jpg, id=83, 301.8778pt x 244.66406pt>
-File: magnetico_linea.jpg Graphic file (type jpg)
-<use magnetico_linea.jpg>
-Package pdftex.def Info: magnetico_linea.jpg  used on input line 651.
+ [13 <./figures/potencial-e-intensidad.png> <./figures/sintesis-electromagnetic
+a.jpg>]
+<figures/magnetico_linea.jpg, id=83, 301.8778pt x 244.66406pt>
+File: figures/magnetico_linea.jpg Graphic file (type jpg)
+<use figures/magnetico_linea.jpg>
+Package pdftex.def Info: figures/magnetico_linea.jpg  used on input line 651.
 (pdftex.def)             Requested size: 241.84843pt x 196.01149pt.
-<espira.jpg, id=84, 265.74281pt x 176.15813pt>
-File: espira.jpg Graphic file (type jpg)
-<use espira.jpg>
-Package pdftex.def Info: espira.jpg  used on input line 679.
+<figures/espira.jpg, id=84, 265.74281pt x 176.15813pt>
+File: figures/espira.jpg Graphic file (type jpg)
+<use figures/espira.jpg>
+Package pdftex.def Info: figures/espira.jpg  used on input line 679.
 (pdftex.def)             Requested size: 241.84843pt x 160.32295pt.
-<solenoide.jpg, id=85, 208.52907pt x 258.21469pt>
-File: solenoide.jpg Graphic file (type jpg)
-<use solenoide.jpg>
-Package pdftex.def Info: solenoide.jpg  used on input line 686.
+<figures/solenoide.jpg, id=85, 208.52907pt x 258.21469pt>
+File: figures/solenoide.jpg Graphic file (type jpg)
+<use figures/solenoide.jpg>
+Package pdftex.def Info: figures/solenoide.jpg  used on input line 686.
 (pdftex.def)             Requested size: 120.92421pt x 149.73703pt.
- [14 <./magnetico_linea.jpg>] [15 <./espira.jpg> <./solenoide.jpg>]
-[16] (fisica.aux
+ [14 <./figures/magnetico_linea.jpg>] [15 <./figures/espira.jpg> <./figures/sol
+enoide.jpg>] [16] (fisica.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 ) ) 
 Here is how much of TeX's memory you used:
- 10304 strings out of 480934
- 197967 string characters out of 2909675
+ 10321 strings out of 480934
+ 199276 string characters out of 2909675
  554811 words of memory out of 3000000
  26010 multiletter control sequences out of 15000+200000
  564559 words of font info for 95 fonts, out of 3000000 for 9000
@@ -613,7 +619,7 @@ gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/urw/helvetic/uhvr8a.pfb>
-Output written on fisica.pdf (16 pages, 676274 bytes).
+Output written on fisica.pdf (16 pages, 676427 bytes).
 PDF statistics:
  161 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

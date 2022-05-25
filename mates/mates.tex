@@ -21,7 +21,7 @@
 
 \usepackage[spanish]{babel}
 %opening
-\title{Física: Selectividad 2022}
+\title{Mates: Selectividad 2022}
 \author{tomiock}
 
 \begin{document}
@@ -129,10 +129,102 @@ Mientras que para una matriz $(3\cross3)$ se puede utilizar la expansión de Lap
 	\begin{vmatrix}a&b&c\\ d&e&f\\ g&h&i\end{vmatrix} =
 	a\begin{vmatrix}e&f\\ h&i\end{vmatrix} - b\begin{vmatrix}d&f\\ g&i\end{vmatrix} + c\begin{vmatrix}d&e\\ g&h\end{vmatrix}
 \end{equation*}
-Donde se puede utilizar cualquier columna o fila para expandir la matriz
+Donde se puede utilizar cualquier columna o fila para expandir la matriz. Dependiendo de la cual, cambia el signo que tiene el determinante. Para un menor $M_{ij}$ el signo que tiene su elemento en la expansión es $(-1)^{i+j}$. Usualmente se da una matriz con un parámetro y se ha de tomar el determinante de esta, resultando en una ecuación de segundo grado normalmente. Es indispensable saber la expansión de Laplace. 
 
+\subsection{Rango de una matriz}
 
+El rango de una matriz es el máximo número de vectores independientes que se pueden sacar de la matriz, ja sean columnas o filas (y no una combinación de las dos). Se puede calcular el rango a partir del orden máximo de los menores no nulos de la matriz (cuando su determinante no es $0$).
 
+Si hay en una matriz hay un menor no nulo de orden $k$ y todos los menores de orden $k+1$ son nulos, entonces el rango de la matriz es $k$. 
+
+Conviene calcular el rango a través de la linealidad de las columnas o filas si se ve inmediatamente. No se pedirá calcular el rango de una matriz de mayor orden que 3.  
+
+\subsection{Matriz inversa}
+ $A^{-1}$ es la matriz inversa de $A$ si:
+\begin{equation*}
+	AA^{-1} = A^{-1}A = I
+\end{equation*}
+En otras palabras:
+\begin{equation*}
+	\exists A^{-1} \iff AA^{-1} = A^{-1}A = I
+\end{equation*}
+Se denomina matriz regular a una matriz que tiene inversa. 
+
+\subsubsection{Cálculo de una matriz inversa}
+
+Se puede calcular mediante la matriz adjunta:
+\begin{equation*}
+	A^{-1} = \frac{1}{|A|} (A^{\dagger})^{T}
+\end{equation*}
+Donde $A^{\dagger}$ es la matriz adjunta, definida mediante sus elementos como:
+\begin{equation}
+	m_{ij} = (-1)^{i+j}M_{ij}
+\label{eq:matriz-adjunta}
+\end{equation}
+
+Para una matriz $A$ de orden $2$, su adjunta será:
+\begin{equation}
+	A^{\dagger} = \begin{pmatrix}
+		a & b \\ c & d
+	\end{pmatrix}^{\dagger} = \begin{pmatrix}
+	d & -b \\ -c & a
+\end{pmatrix}
+\label{eq:2adjunt}
+\end{equation}
+
+Y para una matriz $A$ de orden $3$, su adjunta será:
+\begin{equation}
+	A^{\dagger} = \begin{pmatrix}
+		a_{11} & a_{12} & a_{13} \\
+		a_{21} & a_{22} & a_{23} \\
+		a_{31} & a_{32} & a_{33}
+	\end{pmatrix}^{\dagger} = \begin{pmatrix}
+	+\begin{vmatrix} a_{22} & a_{23} \\ a_{32} & a_{33} \end{vmatrix} &
+	-\begin{vmatrix} a_{21} & a_{23} \\ a_{31} & a_{33} \end{vmatrix} &
+	+\begin{vmatrix} a_{21} & a_{22} \\ a_{31} & a_{32} \end{vmatrix} \\
+	\\
+	-\begin{vmatrix} a_{12} & a_{13} \\ a_{32} & a_{33} \end{vmatrix} &
+	+\begin{vmatrix} a_{11} & a_{13} \\ a_{31} & a_{33} \end{vmatrix} &
+	-\begin{vmatrix} a_{11} & a_{12} \\ a_{31} & a_{32} \end{vmatrix} \\
+	\\
+	+\begin{vmatrix} a_{12} & a_{13} \\ a_{22} & a_{23} \end{vmatrix} &
+	-\begin{vmatrix} a_{11} & a_{13} \\ a_{21} & a_{23} \end{vmatrix} &
+	+\begin{vmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{vmatrix}
+\end{pmatrix}
+\label{eq:3adjunt}
+\end{equation}
+Se pueden ver como el elemento de la fila $i$ y la columna $j$ es el menor $M_{ij}$ de la matriz $A$. El término $(-1)^{i+j}$ de la ecuación \ref{eq:matriz-adjunta} indica el signo que se le da a los menor dependiendo de la posición. No hace falta saber la ecuación \ref{eq:matriz-adjunta}, se puede aprender a hacer mecánicamente con la ecuación \ref{eq:3adjunt} y \ref{eq:2adjunt}. 
+
+Haciendo la transpuesta de la adjunta y dividendo los componentes entre el determinante de la matriz original es como se calcula la inversa de esta. 
+
+\subsection{Discusión de sistemas}
+
+Los sistemas de ecuaciones se pueden representar mediante matrices: 
+\begin{equation*}
+	\begin{cases}
+		px + y + z = 2\\
+		2x + py + p^{2}z = 1\\
+		2x + y + z = 2
+	\end{cases} \rightarrow \left(\begin{array}{lll|l}
+	p & 1 & 1 & 2 \\
+	2 & p & p^{2} & 1 \\
+	2 & 1 & 1 & 2
+\end{array}\right)
+\end{equation*}
+Donde la última columna representa a que equivale la combinación lineal de los parámetros. Sin embargo siempre que se piensa a discurtir el sistema se prescinde de esta columna:
+\begin{equation*}
+	\left(\begin{array}{lll}
+		p & 1 & 1 \\
+		2 & p & p^{2} \\
+		2 & 1 & 1 
+	\end{array}\right)
+\end{equation*}
+
+Dependiendo del rango de estas matrices (denominando la primera como matriz ampliada), podemos diferenciar $3$ tipos de sistemas de ecuaciones:
+\begin{enumerate}
+	\item \textbf{Sistema Compatible Determinado}:\\
+	
+\end{enumerate}
 
 \section{Geometría}
 \section{Análisis}
