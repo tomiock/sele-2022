@@ -6,4 +6,4 @@
 
 [MATES](https://github.com/tomiock/sele-2022/blob/main/mates/mates.pdf)
 
-[QUÍMICA]([QUÍMICA](https://github.com/tomiock/sele-2022/blob/main/quimica/quimica.pdf))
+[QUÍMICA]([QUÍMICA](https://github.com/tomiock/sele-2022/blob/main/quimica/quimica.pdf)
