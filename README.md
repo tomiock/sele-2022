@@ -2,8 +2,8 @@
 
 # LISTA DE PDFs:
 
-[https://github.com/tomiock/sele-2022/blob/main/fisica/fisica.pdf](FÍSICA)
+[FÍSICA](https://github.com/tomiock/sele-2022/blob/main/fisica/fisica.pdf)
 
-[https://github.com/tomiock/sele-2022/blob/main/mates/mates.pdf](MATES)
+[MATES](https://github.com/tomiock/sele-2022/blob/main/mates/mates.pdf)
 
-[https://github.com/tomiock/sele-2022/blob/main/quimica/quimica.pdf](QUÍMICA)
+[QUÍMICA]([QUÍMICA](https://github.com/tomiock/sele-2022/blob/main/quimica/quimica.pdf))
