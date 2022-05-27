@@ -197,6 +197,16 @@ Se pueden ver como el elemento de la fila $i$ y la columna $j$ es el menor $M_{i
 
 Haciendo la transpuesta de la adjunta y dividendo los componentes entre el determinante de la matriz original es como se calcula la inversa de esta. 
 
+Sin embargo, usualmente no es necesario utilizar este método porque se puede calcular mediante la resolución de una ecuación matricial, como en este ejemplo:
+\begin{align*}
+	M^{2} - M -2I = 0\\
+	M - I - 2M^{-1} = 0 \\
+	- I - 2M^{-1} = - M \\
+	M^{-1} = \frac{M-I}{2}
+\end{align*}
+Siendo $M$ una matriz que cumple $M^{2} - M - 2I = 0$. 
+
+
 \subsection{Discusión de sistemas}
 
 Los sistemas de ecuaciones se pueden representar mediante matrices: 
@@ -211,7 +221,7 @@ Los sistemas de ecuaciones se pueden representar mediante matrices:
 	2 & 1 & 1 & 2
 \end{array}\right)
 \end{equation*}
-Donde la última columna representa a que equivale la combinación lineal de los parámetros. Sin embargo siempre que se piensa a discurtir el sistema se prescinde de esta columna:
+Donde la última columna representa a que equivale la combinación lineal de los parámetros. Sin embargo siempre que se piensa a discutir el sistema se prescinde de esta columna:
 \begin{equation*}
 	\left(\begin{array}{lll}
 		p & 1 & 1 \\
@@ -223,10 +233,123 @@ Donde la última columna representa a que equivale la combinación lineal de los
 Dependiendo del rango de estas matrices (denominando la primera como matriz ampliada), podemos diferenciar $3$ tipos de sistemas de ecuaciones:
 \begin{enumerate}
 	\item \textbf{Sistema Compatible Determinado}:\\
-	
+	Sistema que tiene un número finito de soluciones. Para un sistema $M$ con una matriz ampliada $M'$, es compatible determinado si el rango de ambas matrices es el orden de $M$: \\
+\begin{equation*}
+	r(M) = r(M')
+\end{equation*}
+Si el rango de la matriz es su número de filas se dice que es una matriz '\textit{full rank}' o de rango completo. Para ser un sistema compatible determinado, ambas matrices han de ser de rango completo. 
+
+	\item \textbf{Sistema Compatible Determinado}:\\
+	Sistema que tiene infinitas soluciones. Lo es cuando $r(M) = r(M') < \text{orden de $M$}$. Como ejemplo esta el siguiente sistema:
+\begin{align*}
+	M = \begin{pmatrix}
+		2 & 4 & 5 \\
+		1 & 3 & 3 \\
+		3 & 7 & 8 
+	\end{pmatrix} & \qquad M' = \left(\begin{array}{lll|c}
+	2 & 4 & 5 & 1 \\
+	1 & 3 & 3 & -1 \\
+	3 & 7 & 8 & 0 
+\end{array}\right)
+\end{align*}
+Aplicando Gauss podemos ver que: 
+\begin{equation*}
+	\left(\begin{array}{lll|c}
+		2 & 4 & 5 & 1 \\
+		1 & 3 & 3 & -1 \\
+		3 & 7 & 8 & 0 
+	\end{array}\right) \rightarrow \left(\begin{array}{ccc|c}
+	2 & 4 & 5 & 1 \\
+	0 & -2 & -1 & 3 \\
+	0 &-2 & -1 & 3 
+\end{array}\right)
+\end{equation*}
+Y como la matriz tiene dos filas iguales, tiene rango $2$.
+Después al mirar  $M$ podemos identificar un menor con determinante no nulo:
+\begin{equation*}
+	\begin{vmatrix}
+		2 & 4 \\ 1 & 3 
+	\end{vmatrix} = 2
+\end{equation*}
+Al tener este menor orden $2$, podemos decir que el rango de la matriz $A$ es igual a $2$.
+
+Al tener la matriz del sistema y su matriz ampliada el mismo rango, siendo esta menor que el orden de la matriz del sistema, se puede decir que el sistema es compatible determinado. 
+
+	\item \textbf{Sistema Incompatible}:\\
+Un sistema que no tiene soluciones. Simplemente es cuando $r(M) \neq r(M')$. 
 \end{enumerate}
 
+\subsection{Resolución de sistemas}
+\subsubsection{Método de Gauss}
+
+Se pueden hacer operaciones de filas en las matrices para de esta manera mirar si sus vectores son dependientes o no. Estas operaciones pueden son las siguientes:
+\begin{enumerate}
+	\item Permutación de filas (intercambiar de sitio)
+	\item Multiplicación de fila por escalar 
+	\item Resta/Suma de una fila por otra 
+\end{enumerate}
+
+Con estas operaciones se puede conseguir una matriz triangular superior:
+\begin{equation*}
+	\left(\begin{array}{lcl|c}
+		2 & 6 & 9 & 1 \\ 
+		0 & -3 & 6 & 1\\ 
+		0 & 0 & 7 & 5
+	\end{array}\right)
+\end{equation*}
+A partir de ella se puede resolver el sistema:
+\begin{equation*}
+	\left(\begin{array}{lcl|c}
+		2 & 6 & 9 & 1 \\ 
+		0 & -3 & 6 & 1\\ 
+		0 & 0 & 7 & 5
+	\end{array}\right) \rightarrow \begin{cases}
+	2x + 6y + 9z = 1 \\
+	-3y + 6z = 1 \\
+	7z= 5
+\end{cases}
+\end{equation*}
+ Y entonces $z = \frac57$, y a partir de esto se puede resolver todo el sistema. 
+
+\subsection{Método de Cramer}
+Este método no se puede aplicar en sistema Indeterminados. 
+
+Se pueden obtener los parámetros con:
+\begin{align*}
+	x = \frac{\Delta_{x}}{|M|} \qquad y = \frac{\Delta_{y}}{|M|} \qquad z = \frac{\Delta_{z}}{|M|} 
+\end{align*}
+ 
+Para un sistema:
+\begin{equation*}
+	\begin{cases}
+		m_{11}x_{1} + m_{12}x_{2} + m_{13}x_{3} = b_{1} \\
+		m_{21}x_{1} + m_{22}x_{2} + m_{23}x_{3} = b_{2} \\
+		m_{31}x_{1} + m_{32}x_{2} + m_{33}x_{3} = b_{3} 
+	\end{cases}
+\end{equation*}
+Con su matriz ampliada siendo:
+\begin{equation*}
+	M' = \left(\begin{array}{lll|l}
+			m_{11} & m_{12} & m_{13} & b_{1}\\
+			m_{12} & m_{22} & m_{23} & b_{2}\\
+			m_{13} & m_{32} & m_{33} & b_{3}
+	\end{array}\right)
+\end{equation*}
+
+Donde $\Delta_{x}$ es:
+\begin{equation*}
+	\Delta_{x} = \begin{pmatrix}
+		b_{1} & m_{12} & m_{13} \\
+		b_{2} & m_{22} & m_{23} \\
+		b_{3} & m_{32} & m_{33} 
+	\end{pmatrix}
+\end{equation*}
+Podemos ver como la primera columna a sido sustituida por el vector $b$, donde $Mx=b$.
+
 \section{Geometría}
+
+
+
 \section{Análisis}
 
 \end{document}
