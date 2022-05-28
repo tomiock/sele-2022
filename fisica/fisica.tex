@@ -13,6 +13,8 @@
 %\usepackage{svrsymbols}
 \usepackage{siunitx}
 \usepackage{graphicx}
+\usepackage{cancel}
+\usepackage{float}
 \usepackage{subcaption}
 \usepackage[labelfont=sc, font={footnotesize, singlespacing}]{caption}
 \usepackage[margin=2cm]{geometry}  
@@ -116,9 +118,11 @@ A partir de la ley de Hooke sabemos que:
 	F = ma = -k\Delta x \Rightarrow a = -\frac k m \Delta x
 \end{equation*}
 Como que $a = -\omega^{2}\Delta x$ podemos definir la velocidad angular como\footnote{No hay péndulos aparentemente pero son lo mismo que los muelles solo que $\omega = \sqrt\frac gL$. }:
-\begin{equation*}
-	\omega = \sqrt\frac km 
-\end{equation*}
+\begin{align*}
+	- w^{2}\Delta x &= - \frac{k}{m}\Delta x \\
+	\cancel{-} w^{2}\cancel{\Delta x} &= \cancel{-} \frac{k}{m}\cancel{\Delta x} \\
+	\omega &= \sqrt{\frac{k}{m}}
+\end{align*}
 
 La energía cinética asociada a un MAS se puede calcular mediante su velocidad:
 \begin{equation*}
@@ -140,7 +144,7 @@ se puede definir la energía cinética:
 	&= \frac12 mA^{2}\left[\cos^2(\theta) + \sin^{2}(\theta)\right] = \frac12 kA^{2}
 \end{align*}
 
-Es importante tener en cuenta la representación gráfica de las energías, la cual se puede ver en la figura \ref{fig:energiamas}.
+Es importante tener en cuenta la representación gráfica de las energías:
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.5\linewidth]{figures/Energia_MAS}
@@ -150,7 +154,7 @@ Es importante tener en cuenta la representación gráfica de las energías, la c
 
 \subsection{Reflexión y Refracción}
 Una onda al encontrarse con otro medio puede ser reflectada de la siguiente forma:
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.4\linewidth]{figures/onda-reflejada}
 	\caption{$\hat{i}$ es el ángulo de la onda incidente con la recta normal y $\hat{r}$ de la reflejada con la normal.}
@@ -161,7 +165,7 @@ Los ángulos $\theta_i$ y $\theta_r$ son iguales:
 	\hat{i}=\hat{r}\, \text{ o } \,\theta_i = \theta_r
 \end{equation*}
 
-Pero cuando la onda pasa al medio en el cual incide se da lugar una refracción:
+Pero cuando la onda pasa al medio en el cual incide (atraviesa) se da lugar una refracción:
 \begin{figure}[h]
 		\centering
 		\includegraphics[width=.5\textwidth]{figures/refraccion-ondas1}
@@ -205,9 +209,10 @@ La interferencia se puede sacar a partir de una suma de cosenos o senos:
 	\sin A + \sin B &= 2\sin\left(\frac{A+B}{2}\right)\cos\left(\frac{A-B}{2}\right) \\
 	\cos A + \cos B &= 2\cos\left(\frac{A+B}{2}\right)\cos\left(\frac{A-B}{2}\right)
 \end{align*}
+Conviene memorizarse estas igualdades para deducir la interferencia (igualmente las posibilidades de que salgan son bastante pocas). 
 
 \subsection{Onda estacionaria}
-Cuando dos ondas de las mismas características pero que viajan en sentido contrario se superponen crean una onda estacionaria. Al ser una superposición con de ondas con la misma frecuencia, amplitud y fase, se representa con la siguiente suma:
+Cuando dos ondas de las mismas características que viajan en sentido contrario se superponen creando una onda estacionaria. Al ser una superposición con ondas con la misma frecuencia, amplitud y fase, se representa con la siguiente suma:
 \begin{equation*}
 	y_{T} = y_{\text{indidente}} + y_{\text{reflectada}} = A\sin(\omega t -kx)-A\sin(\omega t + kx)
 \end{equation*}
@@ -218,7 +223,7 @@ Aplicando una suma de senos tenemos que\footnote{También aplicamos $\sin-A = -\
 
 \pagebreak
 Las ondas estacionarias forman armónicos: 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\linewidth]{figures/onda-estacionaria-cuerda-fija}
 	\caption{}
@@ -229,10 +234,10 @@ Donde el $n$ armónico contiene $n$ vientres i $n+1$ nodos y tiene una longitud 
 	\lambda_{n} = \frac{2L}{n}
 \end{equation*}
 I por lo tanto una frecuencia $\nu_{n}$ ya que tienen que tener la misma velocidad:
-\begin{align}
+\begin{align*}
 	v &= \lambda_{n}\nu_{n} \\
 	\Rightarrow \nu_{n} &= \frac{v}{\lambda_{n}} = \frac{v}{\frac{2L}{n}} = n\frac{v}{2L}
-\end{align}
+\end{align*}
 Se ha de mencionar que las frecuencias de los armónicos, son múltiples de la frecuencia fundamental:
 \begin{equation*}
 	\nu_n = n\nu_1
@@ -261,10 +266,12 @@ Las cualidades del sonido son las siguientes:
 	\item Timbre: Es la cualidad del sonido que define la forma de su onda. Depende de la fuente emisora. Un la de un piano y un violín son diferentes, ¿no?
 \end{enumerate}
 
-La intensidad de un sonido se mide mediante la potencia\footnote{Normalmente en los problemas se da la potencia y simplemente se tiene que dividir una superficie, que se ha de calcular, par obtener la intensidad del sonido.}:
+La intensidad de un sonido se mide mediante la potencia\footnote{Normalmente en los problemas se da la potencia y simplemente se tiene que dividir una superficie, que se ha de calcular, para obtener la intensidad del sonido.}:
 \begin{equation*}
 	I =\frac PS = \frac 1S \dv{E}{t}
 \end{equation*}
+Siempre al calcular una intensidad sonora se ha de dividir entre la superficie\footnote{Usualmente se ha de utilizar la área de una esfera $S = 4\pi r^{2}$}.
+
 Para una onda 3D tenemos que:
 \begin{equation*}
 	I = \frac PS = \frac 1S \dv{E}{t} = \frac 1S\dv{t}\left[2\pi^{2}\rho\nu^{2}A^{2}V\right] = \frac{2\pi^{2}\rho\nu^{2}A^{2}}{S}\dv{V}{t}
@@ -298,15 +305,28 @@ Este efecto se describe mediante la formula:
 	\nu' = \nu\frac{v\pm v_{O}}{v\mp v_{E}}
 \end{equation*}
 Donde $v_{O}$ es la velocidad del receptor y $v_{E}$ del emisor. 
-No es necesario aprenderla pero si que se tiene que saber operar con ella. Normalmente se puede una explicación/interpretación del efecto. Si se ha de utilizar la formula, te la dan. 
+No es necesario aprenderla pero si que se tiene que saber operar con ella. Normalmente se pide una explicación/interpretación/justificación del efecto. Si se ha de utilizar la formula, te la dan. 
 \pagebreak
 
 \section{Gravitación}
 Los contenidos de este tema son menos, pero es importante tener en cuenta como se describe un movimiento circular, tanto uniforme como uniforme. Asimismo se ha de saber la Ley de Gravitación Universal y todas las leyes de Newton. 
+
+
+Para gravitación es importante tener algunas nociones geométricas de una elipse: 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\linewidth]{figures/elipse_esquema}
+	\caption{Nociones geométricas de una elipse. }
+	\label{fig:elipseesquema}
+\end{figure}
+El sol siempre se va a ubicar en el foco de una órbita elíptica. Puede parecer que está en el centro, pero se ha de tener en cuenta que son órbitas casi circulares. 
+
+
+
 \subsection{Leyes de Kepler}
 Un punto importante de este tema son las leyes de Kepler:
 \begin{enumerate}
-	\item Los planetas giran alrededor del Sol describiendo órbitas elípticas en las cuales el sol es uno de los focos.
+	\item Los planetas giran alrededor del Sol describiendo órbitas elípticas en las cuales el sol es uno de los focos (no está en el centro de la órbita). "Barre"\footnote{En las correcciones de la sele se utiliza mucho la palabra \textit{barrer}. } una área determinada en el mismo en un mismo tiempo determinado. 
 	\item Los planetas  giran alrededor del Sol con una velocidad areolar constante: En un tiempo determinado, el vector de posición define una área que es constante (figura \ref{fig:segunda-ley-kepler})\footnote{Área de un sector circular $A=\frac{\theta r^{2}}{2}$}.
 	\item Los cuadrados de los períodos orbitales son directamente proporcionales a los semiejes más grandes de sus órbitas (la distancia más larga a la que están del sol): 
 	\begin{equation*}
@@ -407,9 +427,10 @@ Conociendo la energía mecánica (a partir de la potencial), es posible definir 
 	\Rightarrow v &= \sqrt{2G\frac{m_{2}}{r}}
 \end{align*}
 Donde $ v$ es la velocidad de escapamiento.
+\pagebreak
 
 \section{Física moderna}
-Este tema viene dividido en dos, una parte es la radioactividad (tiempo de desintegración y ecuaciones radioactivas) y la otra la física cuántica (efecto fotoeléctrico y energía asociada a las partículas). Siempre sale un ejercicio de cada uno de los subtemas.
+Este tema viene dividido en dos, una parte es la radioactividad (tiempo de desintegración y ecuaciones radioactivas) y la otra la física cuántica (efecto fotoeléctrico y energía asociada a las partículas). Siempre sale un ejercicio de cada uno estos subtemas.
 
 \subsection{Ley de Desintegración Radioactiva}
 Una muestra de material radioactivo se desintegra mediante su actividad radioactiva:
@@ -503,6 +524,10 @@ Cada radiación tiene un tipo de decaimiento, la manera en la que cambian los el
 	\end{equation*}
 \end{itemize}
 
+Como regla memotécnica podemos fijarnos en los el signo de la radiación, si negativo entonces pasa lo contrario con el número de protones, que aumentan. En caso de ser la radiación beta positiva, el número de protones disminuye. 
+
+Además se puede relacionar el signo de la radiación con la carga del electrón (si es un positrón y un electrón), también con el neutrino, si es un electrón es un anti neutrino y viceversa. 
+
 \subsection{Efecto fotoeléctrico}
 Es un fenómeno que surge cuando se irradia con radiación electromagnética y genera una corriente (flujo electrones) en un mental. Cuando se irradia el metal este desprende electrones, formando un flujo. 
 
@@ -595,7 +620,7 @@ Asimismo el potencial también se puede relacionar con la energía potencial sim
 \pagebreak
 \subsection{Diagramas de líneas de campo}
 Un ejemplo de un diagrama de líneas de campo es el siguiente:
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\linewidth]{figures/potencial-e-intensidad}
 	\caption{Diagrama de movimiento de cargas en un campo eléctrico}
@@ -636,6 +661,36 @@ Debido a que se $\frac{Nq}{\Delta t}$ es la Intensidad de la corriente, la fuerz
 \begin{equation*}
 	\overrightarrow{F}_{m} = I\overrightarrow{L}\cross\overrightarrow{B}
 \end{equation*}
+
+\subsection{Partícula cargada en campo magnético}
+Al ser la fuerza magnética perpendicular a la velocidad, cuando una partícula cargada entra un campo magnético esta describe una trayectoria circular o elíptica: 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{figures/particula_con_B}
+	\caption{Ejemplo de partícula en un campo magnético. Se puede sacar el sentido de la rotación utilizando un producto vectorial o la regla de la mano derecha. }
+	\label{fig:particulaconb}
+\end{figure}
+
+A partir de esta igualdad se puede obtener el radio y período de esta trayectoria:
+\begin{align*}
+	\overrightarrow{F} = m\overrightarrow{a} &= q\left(\overrightarrow{v}\cross\overrightarrow{B}\right)  \\
+\end{align*}
+Asumiendo que el campo y la velocidad son perpendiculares, podemos utilizar $q\left(\overrightarrow{v}\cross\overrightarrow{B}\right) = qvB$:
+\begin{align*}
+	m\overrightarrow{a} &= qvB \\
+	\Rightarrow \overrightarrow{a} &= \frac{qvB}{m}
+\end{align*}
+Al ser la aceleración, una aceleración centrípeta, ya podemos saber el radio:
+\begin{align*}
+	a_{c} = \frac{qvB}{m} = \frac{v^{2}}{r} \\
+	\Rightarrow r = \frac{mv}{qB}
+\end{align*}
+Y el período:
+\begin{align*}
+	\omega &= \frac{qB}{m} \\
+	\Rightarrow & T = \frac{2\pi m}{qB}
+\end{align*}
 
 \subsection{Inducción campo magnético}
 \subsubsection{Conductor rectilíneo}
