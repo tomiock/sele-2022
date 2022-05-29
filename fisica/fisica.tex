@@ -464,7 +464,7 @@ También se define la vida media $\tau$ de un isotopo como la inversa de la cons
 \subsection{Ecuaciones Radioactivas}
 Un elemento $X$ se puede escribir como:
 \begin{equation*}
-	\ce{^Z_AX^{\pm n}}
+	\ce{^A_ZX^{\pm n}}
 \end{equation*}
 Donde $\ce{Z}$ es el número de protones y neutrones, y $\ce{A}$ es el nombre atómico (número protones). $n$ sería la carga del elemento, en caso de que sea un ion, puede ser positiva o negativa. Esta notación también se aplica a partículas. 
 
@@ -510,7 +510,7 @@ Cada radiación tiene un tipo de decaimiento, la manera en la que cambian los el
 \begin{itemize}
 	\item Decaimiento $\beta^{-}$: \\
 	\begin{equation*}
-		\ce{\beta^{-} \colon^Z_AX -> ^Z_{A+1}Y + e^{-} + \overline{\nu_{e}}}
+		\ce{\beta^{-} \colon^A_ZX -> ^A_{Z+1}Y + e^{-} + \overline{\nu_{e}}}
 	\end{equation*}
 	
 	\item Decaimiento $\beta^{+}$: \\
@@ -520,7 +520,7 @@ Cada radiación tiene un tipo de decaimiento, la manera en la que cambian los el
 
 	\item Decaimiento $\alpha$: \\
 	\begin{equation*}
-		\ce{^Z_{A}X -> ^4_2\alpha_ + ^{Z-4}_{A-2}Po}
+		\ce{^A_{Z}X -> ^2_4\alpha_ + ^{A-2}_{Z-4}Po}
 	\end{equation*}
 \end{itemize}
 
@@ -576,22 +576,22 @@ Donde $\Delta x$ i $\Delta p$ son la impresición en la posición i el momento r
 \subsection{Energía, Campo Eléctrico, Potencial, Fuerza Eléctrica}
 Un campo electrónico creado por una distribución de cargas se define como:
 \begin{equation*}
-	\overrightarrow{E} = \sum^{n}_{i=1}\frac{1}{4\pi\varepsilon_{0}}\frac{q_{i}}{r^{2}_{i}}\hat{r}_{i}
+	\vec{E} = \sum^{n}_{i=1}\frac{1}{4\pi\varepsilon_{0}}\frac{q_{i}}{r^{2}_{i}}\hat{r}_{i}
 \end{equation*} 
 Donde una carga $q_{i}$ está a una distancia $r_{i}$ definida por un vector de posición $\hat{r}_{i}$.
 
 Asimismo la fuerza entre una distribución de cargas sobre una carga $q$ es:
 \begin{equation*}
-	\overrightarrow{F} = \sum_{i=1}^{n}\frac{1}{4\pi\varepsilon_{0}}\frac{qq_{i}}{r^{2}_{i}}\hat{r}_{i}
+	\vec{F} = \sum_{i=1}^{n}\frac{1}{4\pi\varepsilon_{0}}\frac{qq_{i}}{r^{2}_{i}}\hat{r}_{i}
 \end{equation*}
 
 Se puede ver como el campo eléctrico, es la fuerza magnética dividida por la carga a la cual se aplica la fuerza:
 \begin{equation*}
-	\overrightarrow{E} = \frac{\overrightarrow{F}}{q} = \frac{1}{4\pi\varepsilon_{0}} \frac{q}{r^{2}}\hat{r} = k\frac{q}{r^2}\hat{r}
+	\vec{E} = \frac{\vec{F}}{q} = \frac{1}{4\pi\varepsilon_{0}} \frac{q}{r^{2}}\hat{r} = k\frac{q}{r^2}\hat{r}
 \end{equation*}
 Por el contrario también es verdad que:
 \begin{equation*}
-	\overrightarrow{F} = q\overrightarrow{E}
+	\vec{F} = q\vec{E}
 \end{equation*}
 
 Además se puede definir un potencial eléctrico creado por una distribución de cargas a partir de la energía potencial eléctrica:
@@ -609,7 +609,7 @@ Añadiendo la energía cinética podemos definir una energía mecánica que ha d
 
 También es importante saber la relación entre el campo eléctrico y el potencial eléctrico: Un campo eléctrico siempre apunto en la dirección en que el potencial decrece. Esto se pueden expresar fácilmente con una derivada:
 \begin{equation*}
-	E = -\dv{V}{x}\,\text{ o alternativamente }\, \overrightarrow{E} = -\dv{V}{x}\hat{i}
+	E = -\dv{V}{x}\,\text{ o alternativamente }\, \vec{E} = -\dv{V}{x}\hat{i}
 \end{equation*}
 
 Asimismo el potencial también se puede relacionar con la energía potencial simplemente multiplicando por una carga:
@@ -631,7 +631,7 @@ Donde las líneas discontinuas son las líneas equipotenciales, donde todos los 
 \subsection{Movimiento de una carga a través de un campo eléctrico}
 Una carga siempre se moverá siguiendo la fuerza electrostática, es decir la carga multiplicada por el campo eléctrico:
 \begin{equation*}
-	\overrightarrow{F}_{e} = q\overrightarrow{E}
+	\vec{F}_{e} = q\vec{E}
 \end{equation*}
 Hay que tener en cuenta que una carga positiva se mueve en el sentido del campo eléctrico, y una negativa al contrario. También se pueden entender esto como que la carga se mueve en el sentido del potencial (el cual tiene signo). 
 
@@ -646,7 +646,7 @@ Es lo mismo que las ondas armónicas planas pero solo que son ondulaciones en el
 \\
 La dirección de propagación de una onda viene definida por el producto vectorial de los campos:
 \begin{equation*}
-	\overrightarrow{S} = \frac{\overrightarrow{E}\cross\overrightarrow{B}}{\mu}
+	\vec{S} = \frac{\vec{E}\cross\vec{B}}{\mu}
 \end{equation*}
 También cabe destacar que tiene propiedades como la polarización y puede ser absorbida o reflectada. 
 
@@ -655,11 +655,11 @@ También cabe destacar que tiene propiedades como la polarización y puede ser a
 \subsection{Fuerza sobre conductores rectilíneos debajo de la acción de un campo magnético}
 Si tenemos un hilo conductor de longitud $L$ y por el cual circula una corriente $I$, la fuerza magnética de $N$ portadores de carga se puede expresar como:
 \begin{equation*}
-	\overrightarrow{F}_{m} = Nq(\overrightarrow{v}\cross\overrightarrow{B}) = Nq\left(\frac{\overrightarrow{L}}{\Delta t}\cross\overrightarrow{B}\right) = \frac{Nq}{\Delta t}\overrightarrow{L}\cross\overrightarrow{B}
+	\vec{F}_{m} = Nq(\vec{v}\cross\vec{B}) = Nq\left(\frac{\vec{L}}{\Delta t}\cross\vec{B}\right) = \frac{Nq}{\Delta t}\vec{L}\cross\vec{B}
 \end{equation*}
 Debido a que se $\frac{Nq}{\Delta t}$ es la Intensidad de la corriente, la fuerza se puede escribir como:
 \begin{equation*}
-	\overrightarrow{F}_{m} = I\overrightarrow{L}\cross\overrightarrow{B}
+	\vec{F}_{m} = I\vec{L}\cross\vec{B}
 \end{equation*}
 
 \subsection{Partícula cargada en campo magnético}
@@ -674,12 +674,12 @@ Al ser la fuerza magnética perpendicular a la velocidad, cuando una partícula 
 
 A partir de esta igualdad se puede obtener el radio y período de esta trayectoria:
 \begin{align*}
-	\overrightarrow{F} = m\overrightarrow{a} &= q\left(\overrightarrow{v}\cross\overrightarrow{B}\right)  \\
+	\vec{F} = m\vec{a} &= q\left(\vec{v}\cross\vec{B}\right)  \\
 \end{align*}
-Asumiendo que el campo y la velocidad son perpendiculares, podemos utilizar $q\left(\overrightarrow{v}\cross\overrightarrow{B}\right) = qvB$:
+Asumiendo que el campo y la velocidad son perpendiculares, podemos utilizar $q\left(\vec{v}\cross\vec{B}\right) = qvB$:
 \begin{align*}
-	m\overrightarrow{a} &= qvB \\
-	\Rightarrow \overrightarrow{a} &= \frac{qvB}{m}
+	m\vec{a} &= qvB \\
+	\Rightarrow \vec{a} &= \frac{qvB}{m}
 \end{align*}
 Al ser la aceleración, una aceleración centrípeta, ya podemos saber el radio:
 \begin{align*}
@@ -749,7 +749,7 @@ Donde $n=\frac{N}{L}$ es la densidad de espiras.
 \subsection{Fuerza magnética sobre una carga}
 La fuerza de Lorentz describe la fuerza magnética sobre una carga que ubica cobre un campo magnético:
 \begin{equation*}
-	\overrightarrow{F}_{m} = q(\overrightarrow{v}\cross\overrightarrow{B})
+	\vec{F}_{m} = q(\vec{v}\cross\vec{B})
 \end{equation*}
 A través de la definición del producto vectorial podemos ver que:
 \begin{equation*}
@@ -760,7 +760,7 @@ Entonces si la velocidad y el campo son ortogonales entre si la intensidad será
 
 Podemos generalizar esta ecuación considerando la existencia de un campo eléctrico:
 \begin{equation*}
-	\overrightarrow{F} = q(\overrightarrow{E} + \overrightarrow{v}\cross\overrightarrow{B})
+	\vec{F} = q(\vec{E} + \vec{v}\cross\vec{B})
 \end{equation*}
 
 También se puede ver como solo existe la fuerza en caso de que la carga entre en movimiento.
@@ -778,7 +778,7 @@ Por lo tanto, el radio de la trayectoria es:
 
 El flujo magnético es una magnitud que cuantifica la cantidad de líneas de campo que atraviesa una determinada superficie:
 \begin{equation*}
-	\Phi = \overrightarrow{B}\cdot\overrightarrow{S} = BS\cos\theta
+	\Phi = \vec{B}\cdot\vec{S} = BS\cos\theta
 \end{equation*}
 Se calcula a partir del producto escalar entre el vector que define el campo magnético y el vector que define la superficie que atraviesa el campo. Se puede simplificar mediante el coseno del angulo entre el vector del campo y el vector normal de la superficie. 
 

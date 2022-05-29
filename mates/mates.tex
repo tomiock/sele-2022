@@ -2,6 +2,9 @@
 \documentclass[arial,a4paper,print]{article}
 
 \usepackage{amsmath}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
 \usepackage{helvet}
 \usepackage{lipsum}
 \usepackage{multirow}
@@ -10,7 +13,6 @@
 \usepackage[version=4]{mhchem}
 \usepackage{epsfig}
 \usepackage{amssymb}
-%\usepackage{svrsymbols}
 \usepackage{siunitx}
 \usepackage{graphicx}
 \usepackage{cancel}
@@ -91,7 +93,7 @@ O un ejemplo más claro con 2 matrices $(2\cross2)$:
 Se puede ver como es un producto escalar entre vectores que forman columnas y filas:
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.5\linewidth]{producto_matrices}
+	\includegraphics[width=0.5\linewidth]{figures/producto_matrices}
 	\caption{Esquema de la multipliación entre dos matrices, el producto escalar de los vectores resaltados en verde dan lugar al escalar marcado en azul. Se coge una fila de la primera matriz y una columna de la segunda. Debido a esto el producto de matrices no es conmutativo $AB\neq BA$.}
 	\label{fig:productomatrices}
 \end{figure}
@@ -346,11 +348,253 @@ Donde $\Delta_{x}$ es:
 		b_{3} & m_{32} & m_{33} 
 	\end{pmatrix}
 \end{equation*}
-Podemos ver como la primera columna a sido sustituida por el vector $b$, donde $Mx=b$.
+Podemos ver como la primera columna a sido sustituida por el vector $\vec{b}$, donde $M\vec{x}=\vec{b}$.
 
 \pagebreak
 
 \section{Geometría}
+\subsection{Vectores}
+No sé muy bien como explicar que es un vector sin empezar a hablar de mates de la uni, pero lo bueno es que no es necesario saber lo que es. Piensa que es como un número de tres dimensiones que señala un punto en un espacio vectorial\footnote{Tampoco explicaré que es un espacio vectorial porque es chungo hacerlo y no importa mucho. Siempre vamos a trabajar con el mismo espacio, uno de vectores con componentes reales en tres dimensiones.}. 
+
+Por ejemplo esto es un vector:
+\begin{equation*}
+	\vec{x} = 
+	\begin{pmatrix}
+		x_{1} \\ x_{2} \\ x_{3}
+	\end{pmatrix}
+\end{equation*}
+Donde sus componentes son $x_{1}, x_{2}, x_{3}$. 
+
+Dado un conjunto de vectores $\{\vec{v_{1}}, \vec{v_{2}}, \cdots, \vec{v_{n}}\}$ una combinación lineal de estos vectores es:
+\begin{equation*}
+	\lambda_{1}\vec{v_{1}} +  \lambda_{n}\vec{v_{n}} + \cdots + \lambda_{n}\vec{v_{n}} \text{ tal que } \lambda_{1},\lambda_{2}, \cdots, \lambda_{n} \in \mathbb{R}
+\end{equation*}
+
+Los vectores $\{\vec{v_{1}}, \vec{v_{2}}, \cdots, \vec{v_{n}}\}$ son linealmente independientes si:
+\begin{equation*}
+	\lambda_{1}\vec{v_{1}} +  \lambda_{n}\vec{v_{n}} + \cdots + \lambda_{n}\vec{v_{n}} = \vec{0}
+\end{equation*}
+Donde se puede ver que es verdad si para un conjunto de vectores independientes solo si $\lambda_{1} = \lambda_{2} = \cdots = \lambda_{n} = 0$. 
+
+\subsection{Ecuaciones del plano y la recta}
+\subsubsection{Recta}
+Es posible definir una recta 3D solo con un punto de posición y un vector director:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.3\linewidth]{figures/ecuaciones-de-la-recta}
+	\caption{Recta en el espacio con su vector director y punto de posición.}
+	\label{fig:ecuaciones-de-la-recta}
+\end{figure}
+
+Esto matemáticamente se expresa como (\textbf{Ecuación Vectorial}):
+\begin{alignat*}{3}
+	\begin{pmatrix} x \\ y \\ z \end{pmatrix} 
+	&= \begin{pmatrix} p_{1} \\ p_{2} \\ p_{3} \end{pmatrix} 
+	+\lambda\begin{pmatrix} u_{1} \\ u_{2} \\ u_{3} \end{pmatrix} 
+\\
+\vec{x} &=\vec{p} +\lambda\vec{u}\, , \lambda \in \mathbb{R}
+\end{alignat*}
+
+Podemos transformar estos vectores en un sistema de ecuaciones (\textbf{Ecuación Paramétrica}):
+\begin{equation*}
+	\begin{cases}
+		x = x_{0} + \lambda u_{1} \\
+		y = y_{0} + \lambda u_{2} \\
+		z = z_{0} + \lambda u_{3} 
+	\end{cases}
+\end{equation*}
+
+Es posible aislar el número $\lambda$ para igualar las ecuaciones (\textbf{Ecuación Continua}):
+\begin{equation*}
+	\lambda = \frac{x -x_{0}}{u_{1}} = \frac{y -y_{0}}{u_{2}} = \frac{z -z_{0}}{u_{3}}
+\end{equation*}
+
+\subsubsection{Plano}
+En cambio, un plano se puede definir con un punto de posición y dos vectores:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\linewidth]{figures/plane_equation}
+	\caption{Se puede ver como el punto de posición $Q$ y los vectores $S$ y $R$, pueden definir el plano. También esta el vector normal $\vec{n}$.}
+	\label{fig:planeequation}
+\end{figure}
+
+Por lo tanto se puede definir un plano con la siguiente \textbf{Ecuación Vectorial}:
+\begin{alignat*}{3}
+	\begin{pmatrix} x \\ y \\ z \end{pmatrix} 
+	&= \begin{pmatrix} p_{1} \\ p_{2} \\ p_{3} \end{pmatrix} 
+	+\lambda\begin{pmatrix} u_{1} \\ u_{2} \\ u_{3} \end{pmatrix} +\mu\begin{pmatrix} v_{1} \\ v_{2} \\ v_{3} \end{pmatrix} 
+	\\
+	\vec{x} &=\vec{p} +\lambda\vec{u} + \mu\vec{v}\, , \lambda \in \mathbb{R}
+\end{alignat*}
+
+La \textbf{Ecuación Paramétrica} sería:
+\begin{equation*}
+	\begin{cases}
+		x = x_{0} + \lambda u_{1} + \mu v_{1} \\
+		y = y_{0} + \lambda u_{2} + \mu v_{2} \\
+		z = z_{0} + \lambda u_{3} + \mu v_{3} 
+	\end{cases}
+\end{equation*}
+
+De la ecuación vectorial, sabemos que el vector $\vec{x}-\vec{p}$ es una combinación lineal de los vectores $\vec{u} \text{ i }\vec{v}$. Por lo tanto los vectores $\vec{x}-\vec{p}, \vec{u}, \vec{v}$ son linealmente dependientes y por lo tanto el determinante de la matriz que forma deberá de ser $0$:
+\begin{equation*}
+	\begin{vmatrix}
+		x-x_{0} & u_{1} & v_{1} \\
+		y-y_{0} & u_{2} & v_{2} \\
+		z-z_{0} & u_{3} & v_{3} 
+	\end{vmatrix} = 0
+\end{equation*}
+Utilizando la expansión de Laplace acabamos en esta ecuación:
+\begin{align*}
+	(x-x_{0})\begin{vmatrix}
+		u_{2} & v_{2} \\ u_{3} & v_{3}
+	\end{vmatrix} - (y-y_{0})\begin{vmatrix}
+	u_{1} & v_{1} \\ u_{3} & v_{3}
+\end{vmatrix} + (z-z_{0}) \begin{vmatrix}
+u_{1} & v_{1} \\ u_{2} & v_{2}
+\end{vmatrix}
+\end{align*} 
+Que utilizando un poco de álgebra, podemos acabar con:
+\begin{equation*}
+	Ax + By + Cz + D = 0
+\end{equation*}
+Es muy común que en los exámenes se pregunte está ecuación de un plano para definirlo. Se denomina \textbf{Ecuación General} o \textbf{Cartesiana}. 
+
+A partir de esta también se puede definir el vector normal del plano o el vector asociado al plano. Es un vector que es perpendicular al plano. Sus componentes son los parámetros de la ecuación general:
+\begin{equation*}
+	\vec{n} = \begin{pmatrix}
+		A \\ B \\ C
+	\end{pmatrix}
+\end{equation*}
+El número $D$ no forma parte del vector, ya que su función es indicar la posición del plano en el espacio, no su orientación. 
+
+También se puede repasar como definir a una recta a partir de dos planos pero es bastante trivial en mi opinión. Simplemente si te dan dos planos tienes que formar un sistema y resolverlo para un parámetro (tendrá infinitas soluciones claro). 
+
+\pagebreak
+\subsection{Posiciones Relativas Planos}
+
+\subsubsection{Planos paralelos}
+Para dos ecuaciones generales, los planos son paralelos si:
+\begin{equation*}
+	\frac{A}{A'} = \frac{B}{B'} = \frac{C}{C'} \neq \frac{D}{D'}
+\end{equation*}
+
+No hay una igualdad con $\frac{D}{D'}$ porque en caso de serlo, serían planos coincidentes (el mismo plano):
+\begin{equation*}
+	\frac{A}{A'} = \frac{B}{B'} = \frac{C}{C'} = \frac{D}{D'}
+\end{equation*}
+
+\subsubsection{Planos Secantes}
+
+A partir de dos ecuaciones generales podemos definir un sistema como:
+\begin{equation*}
+	\begin{cases}
+		Ax + By + Cz = -D \\
+		A'x + B'y + C'z = -D'
+	\end{cases}
+\end{equation*}
+
+Al mirar el rango de las matrices si $r(M) = r(M') = 2$, entonces el sistema es compatible indeterminado (infinitas soluciones). Concretamente lo es con un grado de libertad. Estas infinitas soluciones son todos los puntos en la recta. Así también se pueden definir una recta, claro, porque si son secantes, definen una recta.
+
+\subsubsection{Posición Relativa de 3 Planos}
+
+Para tres planos con sus ecuaciones generales:
+\begin{align*}
+	\pi_1&: Ax + By + Cz = D \\
+	\pi_2&: A'x + By' + C'z + D' = 0 \\
+	\pi_3&: A''x + B''y + C''z + D'' = 0 \\
+\end{align*}
+
+Con las cuales podemos definir una matriz y por lo tanto un sistema:
+\begin{equation*}
+	\begin{pmatrix}
+		A & B & C \\
+		A' & B' & C' \\
+		A'' & B'' & C'' 
+	\end{pmatrix} \begin{pmatrix}
+	x \\ y \\ z
+\end{pmatrix} = \begin{pmatrix}
+	-D \\ -D' \\ -D''
+\end{pmatrix}
+\end{equation*}
+
+Hay varios casos:
+\begin{enumerate}
+	\item $r(M) = r(M') = 1$ \\
+	Si el rango de ambas matrices es $1$, entonces es un sistema compatible determinado con $2$ grados de libertad, por lo tanto que definen un plano... y entonces pues son el mismo plano (planos coincidentes). 
+	
+	\item $r(M) = 1$ i $r(M') = 2$\\
+	Podemos ver como el sistema es incompatible (sin soluciones) por lo tanto no tiene ningún punto en común y entonces solo pueden ser paralelos o dos puedes ser paralelos y el restante coincidente. Para saber bien su posición, se ha de estudiar si son paralelos entre cada par.
+	
+	\item $r(M) = r(M') = 2$\\
+	El sistema sería compatible indeterminado con un grado de libertad. Si te acuerdas ya hemos hablado de esto, estos planos definen una recta entre dos de ellos o los tres. Para saber exactamente como la definen pues se ha de estudiar si son el mismo plano. 
+	
+	\item $r(M) = 2$ i $r(M') = 3$\\
+	El sistema sería incompatible. Los tres planos no tienen ningún punto en común. Pero claro, dos de ellos si que los pueden tener, definiendo una recta ($r(M) = 2$). El tercer plano puede ser coincidente o paralelo a uno de ellos o definir otra recta. En este caso se dice que los tres planes son secantes de dos a dos. 
+	
+	\item $r(M) = r(M') = 3$\\
+	Realmente este es el caso más fácil, porque los planos coincidirían en un solo punto y ya está :)
+\end{enumerate}
+
+\pagebreak
+\subsection{Posición Relativa entre Plano y Recta}
+
+Para una recta definida como la interjección entre dos planos:
+\begin{equation*}
+	\begin{cases}
+		Ax + By + Cz + D = 0 \\
+		A'x + B'y + C'z + D' = 0 
+	\end{cases}
+\end{equation*}
+
+Y un plano definido como su ecuación general ($ A''x + B''y + C''z + D'' = 0 $).
+
+Es posible crear el siguiente sistema:
+\begin{equation*}
+	\begin{cases}
+		Ax + By + Cz = D \\
+		A'x + B'y + C'z = D' \\
+		A''x + B''y + C''z = D'' \\
+	\end{cases}
+\end{equation*}
+A través del cual podemos ver diversos casos:
+\begin{enumerate}
+	\item $r(M) = r(M') = 2$\\
+	El sistema sería compatible indeterminado, es decir, que hay infinitas soluciones. La única posición que puede cumplir esto es que la recta forme parte del plano. 
+	
+	\item $r(M) = 2$ i $r(M') = 3$\\
+	El sistema sería incompatible, por lo tanto la recta únicamente puede ser paralela al plano.
+	
+	\item $r(M) = r(M') = 3$\\
+	Simplemente la recta cruza el plano en un punto :)
+	
+\end{enumerate}
+
+\subsection{Producto Escalar}
+El producto escalar entre dos vectores:
+\begin{equation*}
+	\vec{a} \cdot \vec{b} = a_{1}b_{1} + a_{2}b_{2} + a_{3}b_{3}
+\end{equation*}
+Se puede utilizar para obtener información ja que también es definido como:
+\begin{equation*}
+	\vec{a} \cdot \vec{b} = \norm{a}\norm{b}\cos \theta
+\end{equation*}
+Donde $\theta$ es el ángulo entre los dos vectores. 
+
+Por lo tanto para $\theta = \frac{\pi}{2}$ los vectores serían perpendiculares y su producto escalar sería igual a $0$, ya que $\cos\frac{\pi}{2} = 0$.
+
+\subsection{Perpendicularidad i Ángulos}
+
+Utilizar este el producto escalar en vectores asociados a un plano, nos puede decir si estos planos son perpendiculares o no, por ejemplo. 
+
+También cuando hablamos de un plano y una recta, esos son perpendiculares si el vector director de la recta y el vector asociado son linealmente dependientes. 
+
+Por último dos rectas son perpendiculares cuando sus vectores directores también lo son. 
+
+Al igual que podemos determinar la perpendicularidad entre dos objectos, también lo podemos hacer con sus ángulos, utilizando también el producto escalar (con el coseno que está en su definición). 
+
+\subsection{Producto Vectorial}
+El producto vectorial es muy útil ya que a partir de él se puede 
 
 
 
