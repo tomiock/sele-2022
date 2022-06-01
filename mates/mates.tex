@@ -594,10 +594,357 @@ Por último dos rectas son perpendiculares cuando sus vectores directores tambi�
 Al igual que podemos determinar la perpendicularidad entre dos objectos, también lo podemos hacer con sus ángulos, utilizando también el producto escalar (con el coseno que está en su definición). 
 
 \subsection{Producto Vectorial}
-El producto vectorial es muy útil ya que a partir de él se puede 
+El producto vectorial entres dos vectores:
+\begin{align*}
+	\vec{a} = \begin{pmatrix}
+		a_{1} \\a_{2}\\a_{3}
+	\end{pmatrix} \\ \vec{b} = \begin{pmatrix}
+	b_{1}\\b_{2}\\b_{3}
+\end{pmatrix}
+\end{align*}
+Se define como:
+\begin{equation*}
+	\vec{a}\cross\vec{b} = \begin{vmatrix}
+		\hat{x} & \hat{y} & \hat{z} \\
+		a_{1} & a_{2} & a_{3} \\
+		b_{1} & b_{2} & b_{3}
+	\end{vmatrix}
+\end{equation*}
+Mediante la expansión de Laplace se puede definir un vector a partir de los ejes ubicados en la matriz de arriba:
+\begin{equation*}
+	\vec{a}\cross\vec{b} = \begin{vmatrix}
+		\hat{x} & \hat{y} & \hat{z} \\
+		a_{1} & a_{2} & a_{3} \\
+		b_{1} & b_{2} & b_{3}
+	\end{vmatrix} = \begin{vmatrix}
+	a_{2} & a_{3} \\
+	b_{2} & b_{3}
+\end{vmatrix}\hat{x} - \begin{vmatrix}
+	a_{1} & a_{3} \\ b_{1} & a_{3}
+\end{vmatrix}\hat{y} + \begin{vmatrix}
+	a_{1} & a_{2} \\ b_{1} & b_{2}
+\end{vmatrix}\hat{z}
+\end{equation*}
 
+Este producto tiene la maravillosa cualidad de generar un vector perpendicular a los dos vectores del producto, siempre que sean independientes, claro. 
 
+También está definido un producto mixto entre tres vectores:
+\begin{equation*}
+	[\vec{u}, \vec{v}, \vec{w}] = \vec{u}\cdot(\vec{v}\cross\vec{w})
+\end{equation*}
+El cual también es útil para el calculo de volumen, áreas y distancias. 
 
+Esta cualidad comporta que este producto tenga muchas aplicaciones sobretodo en el calculo de áreas de figuras geométricas:
+\begin{enumerate}
+	\item Paralelogramo: \\
+	Para dos vectores $\vec{v}$ i $\vec{u}$:
+\begin{equation*}
+	A = |\vec{u}\cross\vec{v}|
+\end{equation*}
+
+	\item Triangulo: \\
+	Para tres puntos $Q, R, P$ que definen un triangulo:
+\begin{equation*}
+	A = \frac12 |\vec{PQ}\cross\vec{PR}|
+\end{equation*}
+
+	\item Distancia Punto y Recta: \\
+	Para una distancia $d$ entre el punto $P$ i una recta $r$ (con vector director $\vec{r}$), que coinciden en un punto $Q$:
+\begin{equation*}
+	d(P, r) = \frac{|\vec{u}\cross\vec{QP}|}{\vec{u}}
+\end{equation*}
+
+	\item Volumen Paralelepípedo: \\
+	Para un paralelepípedo definido por los vectores $\vec{v}, \vec{u}, \vec{w}$:
+\begin{equation*}
+	V = |[\vec{v}, \vec{u}, \vec{w}]|
+\end{equation*}
+
+	\item Volumen i Área Pirámide de Base Triangular: \\
+	Para una pirámide definida por los vectores  $\vec{v}, \vec{u}, \vec{w}$, su volumen es:
+\begin{equation*}
+	V = \frac13 Ah = \frac16|[\vec{u}, \vec{v}, \vec{w}]|
+\end{equation*}
+Donde su área es:
+\begin{equation*}
+	A = \frac12|\vec{v}\cross\vec{w}|
+\end{equation*}
+Y su altura:
+\begin{equation*}
+	h = |\vec{u}|\cos \alpha
+\end{equation*}
+Donde $\alpha$ es el angulo entre el vector de la pirámide que va hacia arriba y el vector que define la altura (que es $\vec{v}\cross\vec{w}$). 
+
+\end{enumerate} 
+
+\pagebreak
 \section{Análisis}
+
+\subsection{Limites}
+Hay varios tipos de límites con varias maneras de calcularlos, pero son todas bastantes parecidas. 
+
+Dejando de lado el teorema de l'Hôpital, conviene calcular los limites con la calculadora, utilizando una número cerca al que queremos calcular el límite hacia. 
+\begin{equation*}
+	f(x) = \frac{x^{2}}{4-2x} \rightarrow D_{f} = \{x \in \mathbb{R} | 4-2x\neq 0 \} = \mathbb{R} - \{2\}
+\end{equation*}
+Como se puede ver $2$ no pertenece al dominio de la función y por lo tanto podríamos calcular el límite para solucionar la discontinuidad:
+\begin{equation*}
+	\lim_{x\rightarrow2^{-}} \frac{x^{2}}{4-2x} = \frac{4}{0^{+}} = + \infty
+\end{equation*}
+\begin{equation*}
+	\lim_{x\rightarrow2^{+}} \frac{x^{2}}{4-2x} = \frac{4}{0^{-}} = + \infty
+\end{equation*}
+
+Para hacer los límites hacia los infinitos también se pueden hacer con la calculadora, sustituyendo la variable por un número muy grande negativo o positivo. 
+
+\subsection{Asíntotas}
+\footnote{asín de tontas, jaja lo pillas?}No se muy bien como definirlas lo siento, pero piensa en ellas como indicadores de como la función tiende a algún valor cuando va hacia infinito o algún valor en concreto. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{figures/asymptotes}
+	\caption{Tipos de asíntotas}
+	\label{fig:asymptotes}
+\end{figure}
+
+
+\begin{enumerate}
+	\item Asíntota Vertical:\\
+	$f(x)$ tiene una asíntota vertical en $x=a$ si:
+\begin{equation*}
+	\lim_{x\rightarrow a}f(x) = \pm\infty
+\end{equation*}
+En caso de:
+\begin{equation*}
+	\lim_{x\rightarrow a^{-}} f(x) = \infty \text{ i } \lim_{x\rightarrow a^{+}} f(x) = \infty
+\end{equation*}
+La función tiene una discontinuidad vertical en $x=a$:
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=.3\linewidth]{figures/discontinuidad_vertical}
+	\caption{Ejemplo de discontinuidad vertical donde $\lim_{x\rightarrow a^{+}} f(x) = +\infty$ i $\lim_{x\rightarrow a^{-}} f(x) = -\infty$.}
+	\label{fig:discontinuidadvertical}
+\end{figure}
+
+\item Asíntota Horizontal:\\
+Existe una asíntota horizontal cuando la función tiende a un número $b\in\mathbb{R}$ cuando $x $ tiende a $\pm\infty$: 
+\begin{equation*}
+	\lim_{x\rightarrow -\infty} f(x) = b\in\mathbb{R} \quad\text{ o }\quad \lim_{x\rightarrow +\infty} f(x) = b\in\mathbb{R}
+\end{equation*}
+
+\item Asíntota Oblicua:\\
+Es cuando la función tiende a ser una recta $y = mx + n$ según $x$ tiende a $\pm\infty$. Al existir una asíntota horizontal, es imposible que exista una oblicua. Para poder identificarlas, primero se comprueba que no haya una horizontal y luego se encuentra la $m$ de la recta a través de este límite:
+\begin{equation*}
+	m = \lim_{x\rightarrow \pm\infty} \frac{f(x)}{x}
+\end{equation*}
+Para luego encontrar la $n$ con este:
+\begin{equation*}
+	n = \lim_{x\rightarrow \pm\infty} \left(f(x) - mx\right)
+\end{equation*}
+
+También es posible que no haya ni horizontal ni oblicua, en ese caso al calcular el limite para encontrar $m$, daría un número muy grande o infinito. 
+	
+\end{enumerate}
+
+\subsection{Continuidad de Funciones}
+
+Una función es continua en $x = a$ cuando es verdad que:
+\begin{equation*}
+	\lim_{x\rightarrow a^{+}} f(x) = \lim_{x\rightarrow a^{-}} f(x) = f(a)
+\end{equation*}
+En caso de que no lo sea, se dice que $a$ no está en el dominio de $f(x)$:
+\begin{equation*}
+	D_{f} = \{x \in \mathbb{R} | x \neq a\} = \mathbb{R} - \{a\}
+\end{equation*}
+
+Una función es continua en un intervalo si lo es para todos los puntos en el intervalo. 
+
+Para saber la continuidad de una función sin conocer si gráfica ni realizar limites, hay que tener en cuenta varios aspectos:
+\begin{enumerate}
+\item La suma de dos funciones continuas es una nueva función continua.
+\item Todas las funciones polinomicas son funciones continuas. 
+\item Todas las funciones exponenciales y las $\sin$ o $\cos$ son continuas\footnote{No todas las funciones trigonométricas son continuas, $\tan$ tiene una discontinuidad vertical cada $\frac{\pi}{2}$ radianes.}. 
+\item Para una función con un cociente, si el denominador es cero, esta función no es continua para el valor de $x$ que cumple esta condición ( $D_{f} = \{x \in \mathbb{R} | f(a) = \frac{b}{0}\} = \mathbb{R} - \{a\} $ ). En otras palabras si hay un cero en el denominador, la función no es continua. 
+\item Una función derivable en un punto, también es continua en ese punto. 
+\end{enumerate}
+
+Las funciones de las cuales vamos a tener que estudiar la continuidad son:
+\begin{enumerate}
+\item Polinomicas
+\item Racionales
+\item Trigonométricas ( $\cos, \sin, \tan$ )
+\item Exponenciales i Logarítmicas
+\item Con valor absoluto
+\item Definición a trozos
+\end{enumerate}
+
+Para todas ellas, estudiar la continuidad es muy fácil. Lo único que hay que tener en cuenta es lo dicho con anterioridad y pensar en como se pueden pueden obtener discontinuidades, incluido las verticales, que se encuentran a través de limites. 
+
+\pagebreak
+
+\subsubsection{Clasificación de puntos de discontinuidad}
+
+Hay tres tipos de discontinuidades:
+\begin{enumerate}
+\item Evitable:\\
+Es cuando para un valor $a$ no existe $f(a)$, pero si que los limites laterales son iguales:
+\begin{equation*}
+	\lim_{x\rightarrow a^{+}} f(x) = \lim_{x\rightarrow a^{-}} = b \in\mathbb{R}
+\end{equation*}
+En este caso se puede decir que es evitable, en el sentido que $f(a) = b$. 
+
+\item De Salto:\\
+Es cuando para un valor $a$ puede existir $f(a)$, pero los limites laterales no son iguales:
+\begin{equation*}
+	\lim_{x\rightarrow a^{+}} f(x) \neq \lim_{x\rightarrow a^{-}} 
+\end{equation*}
+En este caso puede o no existir $f(a) = b$ y $b$ puede ser o no igual a uno de los limites laterales (pero no a ambos).
+
+\item Asintótica:\\ 
+Es cuando uno de los limites laterales es un valor que tiene al infinito:
+\begin{equation*}
+	\lim_{x\rightarrow a^{\pm}} f(x) = \pm\infty
+\end{equation*}
+\end{enumerate}
+
+\subsection{Teorema de Bolzano}
+Me la agarras con la mano :) (regla para memorizar)
+
+\textbf{-}Teorema: \\
+Para una función $f(x)$ en un intervalo cerrado $[a, b]$ y tal que $f(a)$ i $f(b)$ sean de signo diferente ($f(a)f(b)< 0$), entonces existe un punto $c\in[a, b]$ tal que $f(c) = 0$. \\
+
+Tiene mucho sentido si lo piensas, porque para pasar de un número negativo a positivo (o viceversa) se ha de pasar por el cero.
+
+Este teorema sirve para comprobar si existe una raíz de una función en un intervalo o si esta raíz es única en este intervalo. Existen algunas excepciones a esto, por ejemplo las funciones trigonométricas $\cos$ o $\sin$. 
+
+\subsection{DERIVADAS}
+La derivada de una función $f(x)$ es otra función $f'(x)$ que describe como varia $f(x)$ según varia $x$. 
+
+La derivada de una función en un punto es:
+\begin{equation*}
+	f'(x_{0}) = \lim_{h\rightarrow 0} \frac{f(x_{0} + h) - f(x_{0})}{h}
+\end{equation*}
+Está es la definición de una derivada. De ella podemos saber que para una función $y = f(x)$ en un punto $x = x_{0}$ es la pendiente tangente a la gráfica en este punto:
+\begin{equation*}
+	f'(x_{0}) = m
+\end{equation*}
+Donde $m$ es la pendiente de una función afín $ y = mx + n$. 
+ 
+A partir de la definición de la derivada se pueden crear reglas una especie de reglas que se utilizan para averiguar la derivada de una función. 
+
+\begin{itemize}
+\item Función Constante: \\
+\begin{equation*}
+	f(x) = k \rightarrow f'(x) = 0
+\end{equation*}
+
+\item Función de un monomio: \\
+\begin{equation*}
+	f(x) = x^{n} \rightarrow f'(x) = nx^{n-1}\big| n\in\mathbb{Q}
+\end{equation*}
+(Para cualquier número racional $n$)
+
+\item Suma de funciones:\\
+\begin{equation*}
+	f(x) = p(x) + q(x) \rightarrow f'(x) = p'(x) + q'(x)
+\end{equation*}
+
+\item Producto de función con un escalar $k$:\\
+\begin{equation*}
+	f(x) = kg(x) \rightarrow f'(x) = kg'(x)
+\end{equation*}
+\begin{equation*}
+	f(x) = kg(x) \rightarrow \dv{f(x)}{x} = k\dv{g(x)}{x}
+\end{equation*}
+
+Donde la notación $\dv{x}$ significa que:
+\begin{equation*}
+	f'(x) = \dv{f(x)}{x}
+\end{equation*}
+
+\item Funciones $\cos$ y $\sin$: \\
+\begin{equation*}
+	f(x) = \sin x \rightarrow f'(x) = \cos x
+\end{equation*}
+\begin{equation*}
+	f(x) = \cos x \rightarrow f'(x) = - \sin x
+\end{equation*}
+
+\item Función $\ln|x|$:\\
+Para una función $\ln|x|$ o función $\ln x$ definida en $\mathbb{R}^+$: 
+\begin{equation*}
+	f(x) = \ln x \rightarrow f'(x) = \frac1x
+\end{equation*}
+
+
+\item Función logarítmica:\\
+Para una función $\log_a x$ definida en $\mathbb{R}^{+}$:
+\begin{equation*}
+	f(x) = \log_a x \rightarrow f'(x) = \frac{1}{\ln a}\frac1x
+\end{equation*} 
+
+\item Función Compuesta (Regla de la Cadena):\\
+\begin{equation*}
+	f(x) = g\circ u = g(u(x)) \rightarrow f'(x) = g'(u(x))u(x)
+\end{equation*}
+O con otra notación sin tantos paréntesis:
+\begin{equation*}
+	f'(x) = \dv{g(u)}{u}\dv{u(x)}{x}
+\end{equation*}
+Donde la derivada $\dv{g(u)}{u}$ es la derivada de $g(x)$ con respecto a la función $u(x)$. Para hacerla simplemente se creo un nuevo parámetro $v$ y se define como $u(x)$, para luego tomar la derivada de $g(x)$ respecto a $v$. 
+
+Aplicando esto a las funciones de las que he hablando anteriormente tenemos que:
+\begin{align*}
+	f(x) &= [u(x)]^{n} \rightarrow f'(x) = n[u(x)]^{n-1}u'(x) \\
+	f(x) &= \sin[u(x)] \rightarrow f'(x) = \cos[u(x)]u'(x) \\
+	f(x) &= \cos[u(x)] \rightarrow f'(x) = -\sin[u(x)]u'(x) \\
+	f(x) &= \ln[u(x)] \rightarrow f'(x) = \frac{1}{u(x)} u'(x) = \frac{u'(x)}{u(x)} \\
+	f(x) &= \log_a [u(x)] \rightarrow f'(x) = \frac{1}{\ln a} \frac{1}{u(x)} u'(x) = \frac{1}{\ln a}\frac{u'(x)}{u(x)} 
+\end{align*}
+
+\item Función Exponencial:\\
+\begin{equation*}
+	f(x) = [u(x)]
+\end{equation*}
+
+\end{itemize}
+
+
+\subsection{Estudio de Funciones}
+
+Hay varios aspectos a los que mirar para el estudio de las funciones:
+\begin{enumerate}
+
+\item Dominio i Recorrido:\\
+El dominio es simplemente todos los puntos en los cuales la función es continua. Mientras que el recorrido son todas las $y$ que existen para $y = f(x) \forall x\in D_{f}$
+
+\item Puntos de Corte con los Ejes:\\
+Solucionar las ecuaciones:
+\begin{equation*}
+	0 = f(x_{0})
+\end{equation*}
+\begin{equation*}
+	y_{0} = f(0)
+\end{equation*}
+Para definir el corte con el eje OX $(x_{0}, 0)$ y el corte en el eje OY $(0, y_{0})$. 
+
+\item Simetrías: \\
+Existe una simetría en la función si para dos puntos $a, b$, la función de estos tiene el mismo valor:
+\begin{equation*}
+	f(a) = f(b)
+\end{equation*}
+La simetría puede ser en un intervalo o en un punto en concreto. 
+
+\item Limites al infinito: \\
+Ya he hablado antes sobre esto x1
+
+\item Asíntotas:\\
+Ya he hablado antes sobre esto x2
+
+\item Continuidad:\\
+Ya he hablado antes sobre esto x3
+
+\end{enumerate}
+
 
 \end{document}
