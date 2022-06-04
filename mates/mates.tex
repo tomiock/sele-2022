@@ -883,7 +883,7 @@ Para una función $\log_a x$ definida en $\mathbb{R}^{+}$:
 	f(x) = \log_a x \rightarrow f'(x) = \frac{1}{\ln a}\frac1x
 \end{equation*} 
 
-\item Función Compuesta (Regla de la Cadena):\\
+\item Función Compuesta (\textbf{Regla de la Cadena}):\\
 \begin{equation*}
 	f(x) = g\circ u = g(u(x)) \rightarrow f'(x) = g'(u(x))u(x)
 \end{equation*}
@@ -899,17 +899,63 @@ Aplicando esto a las funciones de las que he hablando anteriormente tenemos que:
 	f(x) &= \sin[u(x)] \rightarrow f'(x) = \cos[u(x)]u'(x) \\
 	f(x) &= \cos[u(x)] \rightarrow f'(x) = -\sin[u(x)]u'(x) \\
 	f(x) &= \ln[u(x)] \rightarrow f'(x) = \frac{1}{u(x)} u'(x) = \frac{u'(x)}{u(x)} \\
-	f(x) &= \log_a [u(x)] \rightarrow f'(x) = \frac{1}{\ln a} \frac{1}{u(x)} u'(x) = \frac{1}{\ln a}\frac{u'(x)}{u(x)} 
+	f(x) &= \log_a [u(x)] \rightarrow f'(x) = \frac{1}{\ln a} \frac{1}{u(x)} u'(x) = \frac{1}{\ln a}\frac{u'(x)}{u(x)} \\
+	f(x) &= [u(x)]^{n} \rightarrow f'(x) = n[u(x)]^{n-1}u'(x)
 \end{align*}
 
-\item Función Exponencial:\\
+\pagebreak
+\item Producto de Funciones\footnote{$fg = f'g + fg'$}:\\
 \begin{equation*}
-	f(x) = [u(x)]
+	f(x) = g(x)h(x) \rightarrow f'(x) = g'(x)h(x) + g(x)h'(x)
 \end{equation*}
+
+\item Funciones 'Inversas':\\
+\begin{equation*}
+	f(x) = \frac{1}{g(x)} \rightarrow f'(x) = \frac{-g'(x)}{[g(x)]^{2}}
+\end{equation*}
+
+\item Cociente de Funciones:\\
+\begin{equation*}
+	f(x) = \frac{g(x)}{h(x)} \rightarrow f'(x) = \frac{g'(x)h(x) - g(x)h'(x)}{[h(x)]^{2}}
+\end{equation*}
+
+\item Funciones Exponenciales:
+\begin{align*}
+	f(x) &= e^x \rightarrow f'(x) = e^{x} \\
+	f(x) &= e^{u(x)} \rightarrow f'(x) = e^{u(x)}u'(x) \\
+	f(x) &= a^{x} \rightarrow f'(x) = a^{x}\ln a \\
+	f(x) &= a^{u(x)} \rightarrow f'(x) = a^{u(x)}u'(x)\ln a
+\end{align*}
+
+\item Funciones con Funciones de Exponente:
+\begin{equation*}
+	f(x) = g(x)^{h(x)} \rightarrow f'(x) = [g(x)]^{h(x)}\left[h'(x)\ln(g(x))+h(x)\frac{g'(x)}{g(x)}\right]
+\end{equation*}
+
+\item Inversa de Funciones Trigonométricas:
+\begin{align*}
+	f(x) &= \sin^{-1}u(x) \rightarrow f'(x) = \frac{1}{\sqrt{1-u^{2}(x)}}u'(x) \\
+	f(x) &= \cos^{-1}u(x) \rightarrow f'(x) = \frac{-1}{\sqrt{1-u^{2}(x)}}u'(x) \\
+	f(x) &= \tan^{-1}u(x) \rightarrow f'(x) = \frac{1}{1+u^{a}(x)}u'(x)
+\end{align*}
 
 \end{itemize}
 
+\subsubsection{Funciones Derivables (o no)}
+Para un punto $x_{0}$, la función $f(x)$, no es derivable si el siguiente límite no existe:
+\begin{equation*}
+	f'(x) = \lim_{h\rightarrow 0}\frac{f(x_{0}+ h )-f(x_{0})}{h}
+\end{equation*}
+Esto pasa con las siguientes discontinuidades:
+\begin{enumerate}
+	\item Discontinuidad Evitable
+	\item Discontinuidad de Salto
+	\item Discontinuidad Asintótica
+\end{enumerate}
 
+No obstante es de mayor importancia recordad que una función derivable en un punto es continua en ese punto. 
+
+\pagebreak
 \subsection{Estudio de Funciones}
 
 Hay varios aspectos a los que mirar para el estudio de las funciones:
@@ -944,7 +990,102 @@ Ya he hablado antes sobre esto x2
 \item Continuidad:\\
 Ya he hablado antes sobre esto x3
 
+\item Intervalos de Crecimiento y Decrecimiento:\\
+Las funciones tiene intervalos en los que crecen y en los que decrecen (menos las funciones constantes, claro). Con la derivada se puede ver inmediatamente que:
+\begin{itemize}
+\item Funciones Creciente cuando:
+\begin{equation*}
+	f'(x_{0}) > 0
+\end{equation*}
+
+\item Funciones Decrecientes cuando:
+\begin{equation*}
+	f'(x_{0}) < 0
+\end{equation*}
+
+\end{itemize}
+A partir de mirar varios puntos, es como se puede construir un intervalo. Hay que recordad que una derivada puede dar $0$ (veremos a continuación que pasa si se da el caso) o que hay puntos en un intervalo que no pueden ser derivables (si hay discontinuidades). 
+
+\item Máximos y Mínimos Relativos:\\
+Se puede ver como cuando una función pasa de ser creciente a decreciente, existe un máximo relativo entre esos dos intervalos. Asimismo, cuando pasa de decreciente a creciente, existe un mínimo relativo. 
+
+Estos puntos cumplen con la condición de que su derivada es $0$:
+\begin{equation*}
+	f(x_{0}) = 0
+\end{equation*}
+
+Sin embargo para encontrar esos puntos es mejor emplear el concepto de segunda derivada. Para una función $f(x)$, su segunda derivada $f''(x)$ es\footnote{Hay que recordar que $f'(x) = \dv{x}f(x) = \dv{f(x)}{x}$}:
+\begin{equation*}
+	f''(x) = \dv{x}\left[\dv{x} f(x)\right] = \dv[2]{x}f(x)
+\end{equation*}
+
+Cuando empleamos la segunda derivada en un punto $x_{0}$, este es un máximo relativo cuando:
+\begin{equation*}
+	f'(x_{0}) = 0 \text{ y } f''(x_{0}) < 0
+\end{equation*}
+
+Asimismo, para un punto $x_{0}$ en el que hay un mínimo relativo, es verdad que:
+\begin{equation*}
+	f'(x_{0}) = 0 \text{ y } f''(x_{0}) > 0
+\end{equation*}
+
+\item Concavidad i Convexidad:\\
+Cuando se habla de si la primera derivada crece o decrece, hablamos si esta és cóncava o convexa. No importa mucho que es lo que significa esto intuitivamente, pero como lo pregunta en el examen tenemos que saber como se hace: Un intervalo donde la segunda derivada es positiva $f''(x) > 0$, en este intervalo, la derivada es cóncava. En caso de que sea negativa $f''(x) < 0 $ esta es convexa. 
+\begin{align*}
+	f''(x) >0 \quad f'(x) \text{ crece en } x \quad \Rightarrow f(x) \text{ es cóncava} \\
+	f''(x) <0 \quad f'(x) \text{ decrece en } x \quad \Rightarrow f(x) \text{ es convexa}
+\end{align*}
+
+\item Puntos de Inflexión:\\
+Son los puntos cuando la función pasa de ser convexa a cóncava o viceversa. A partir de las definiciones se pueden ver que estos puntos es cuando la segunda derivada es $0$:
+\begin{equation*}
+	f''(x) = 0
+\end{equation*}
+
+Hay que mencionar que cuando se encuentra un punto nulo de la primera derivada, conviene ver si en ese punto la segunda derivada también lo es, porque en ese caso tendríamos un punto de inflexión, no un mínimo o máximo. 
+
+\item \textbf{¿Tienes un resumen de todo esto, por favor?}\\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.3\linewidth]{figures/second_derivative}
+	\caption{Aquí tenemos unas gráficas ilustrativas de como se relacionan la primera y segudna derivada de una función.}
+	\label{fig:secondderivative}
+\end{figure}
+
+\pagebreak
+Pero aquí tenéis una tabla bien chula que sirve como resumen de todo esto:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{figures/resumen_analissi}
+	\caption{RESUMEN DE TODO ESTO (hay un error cuando se habla de la curvatura (cóncava/convexa), cuando $f''(x) > 0$ es cóncava y cuando $f''(x) < 0$ es convexa).}
+	\label{fig:resumenanalissi}
+\end{figure}
+
+
+\subsection{Representaciones Gráficas}
+
+De tanto en tanto salen ejercicios en los cuáles hay que representar gráficamente una función que te dan, con las herramientas que de las que he hablado en la sección anterior es muy fácil hacerlo. Lo más importante es empezar sabiendo los puntos de corte de una función, además de cuando esta es nula. Luego se pasa a dibujar los mínimos y máximos (si es que los hay), y finalmente dibujar puntos de inflexión (en caso de que los haya también). 
+
+Si no te gusta hacerlo de esta manera, utiliza una tabla de valores. También conviene saber aproximadamente como dibujar una parábola o una función logarítmica, para hacerse una idea general de como se deberían de dibujar este tipo de funciones. 
+
+Además es posible que se relacionen estas gráficas o funciones son situaciones 'reales' geométricas, científicas y tecnológicas.
+
+
+\subsection{Problemas de Optimización}
+En estos problemas hay que encontrar dos funciones, una que sirva para expresar la función que se ha de optimizar (encontrar el máximo o mínimo con una segunda derivada) y otra función que nos sirve de condición para derivar la primera. 
+
+La función de condición se ha de expresar como una variable y luego sustituirla en la que se optimiza, una vez hecho esto se puede derivar para encontrar el máximo o mínimo. 
+
+La dificultad de estos problemas normalmente radica encontrar las funciones, no es hacer los cálculos para saber en que punto la función es óptima. Normalmente las derivadas que se tiene que hacer son bastante sencillas.  
+
+\subsection{INTEGRALES}
+
+
+
+
 \end{enumerate}
+
+
 
 
 \end{document}

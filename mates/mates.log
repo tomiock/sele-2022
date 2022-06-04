@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.12.18)  31 MAY 2022 17:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.12.18)  3 JUN 2022 13:30
 entering extended mode
 **./mates.tex
 (mates.tex
@@ -558,18 +558,53 @@ Underfull \hbox (badness 10000) in paragraph at lines 886--887
 
  []
 
-[13] [14] (mates.aux
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 907--908
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 912--913
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 917--918
+
+ []
+
+[14] [15]
+<figures/second_derivative.jpg, id=79, 271.76532pt x 445.665pt>
+File: figures/second_derivative.jpg Graphic file (type jpg)
+<use figures/second_derivative.jpg>
+Package pdftex.def Info: figures/second_derivative.jpg  used on input line 1050
+.
+(pdftex.def)             Requested size: 145.11053pt x 237.9762pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1047--1053
+
+ []
+
+[16 <./figures/second_derivative.jpg>]
+<figures/resumen_analissi.jpg, id=83, 478.03593pt x 720.44156pt>
+File: figures/resumen_analissi.jpg Graphic file (type jpg)
+<use figures/resumen_analissi.jpg>
+Package pdftex.def Info: figures/resumen_analissi.jpg  used on input line 1059.
+
+(pdftex.def)             Requested size: 435.32422pt x 656.07555pt.
+ [17 <./figures/resumen_analissi.jpg>]
+[18] (mates.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 ) ) 
 Here is how much of TeX's memory you used:
- 10296 strings out of 480934
- 197108 string characters out of 2909675
- 558841 words of memory out of 3000000
- 25982 multiletter control sequences out of 15000+200000
+ 10316 strings out of 480934
+ 197678 string characters out of 2909675
+ 558859 words of memory out of 3000000
+ 26000 multiletter control sequences out of 15000+200000
  566480 words of font info for 101 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,14n,47p,475b,612s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 46i,14n,47p,481b,612s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/Program Files/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb><C:/Program Files/MiKTeX 2.9/
@@ -590,9 +625,9 @@ gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Progra
 m Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/urw/helvetic/uhvro8a.pfb>
-Output written on mates.pdf (14 pages, 328497 bytes).
+Output written on mates.pdf (18 pages, 541611 bytes).
 PDF statistics:
- 142 PDF objects out of 1000 (max. 8388607)
+ 156 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

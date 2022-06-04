@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.12.18)  25 MAY 2022 18:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.12.18)  4 JUN 2022 11:47
 entering extended mode
 **./quimica.tex
 (quimica.tex
@@ -251,6 +251,17 @@ Package: siunitx 2020/02/25 v2.8b A comprehensive (SI) units package
 ("C:\Program Files\MiKTeX 2.9\tex/latex/translator\translator.sty"
 Package: translator 2020-08-03 v1.12c Easy translation of strings in LaTeX
 ))
+("C:\Program Files\MiKTeX 2.9\tex/latex/cancel\cancel.sty"
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count283
+\float@exts=\toks22
+\float@box=\box57
+\@float@everytoks=\toks23
+\@floatcapt=\box58
+)
 ("C:\Program Files\MiKTeX 2.9\tex/latex/caption\subcaption.sty"
 Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
 
@@ -268,11 +279,12 @@ Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
 \caption@hangindent=\dimen175
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count283
-\c@continuedfloat=\count284
+\c@caption@flags=\count284
+\c@continuedfloat=\count285
+Package caption Info: float package is loaded.
 )
-\c@subfigure=\count285
-\c@subtable=\count286
+\c@subfigure=\count286
+\c@subtable=\count287
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.sty"
 Package: geometry 2020/01/02 v5.9 Page Geometry
@@ -283,9 +295,9 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 ("C:\Program Files\MiKTeX 2.9\tex/generic/iftex\iftex.sty"
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
-\Gm@cnth=\count287
-\Gm@cntv=\count288
-\c@Gm@tempcnt=\count289
+\Gm@cnth=\count288
+\Gm@cntv=\count289
+\c@Gm@tempcnt=\count290
 \Gm@bindingoffset=\dimen176
 \Gm@wd@mp=\dimen177
 \Gm@odd@mp=\dimen178
@@ -294,7 +306,7 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 \Gm@layoutheight=\dimen181
 \Gm@layouthoffset=\dimen182
 \Gm@layoutvoffset=\dimen183
-\Gm@dimlist=\toks22
+\Gm@dimlist=\toks24
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.cfg"))
 ("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.sty"
@@ -315,15 +327,15 @@ Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
 
 ("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.def"
 File: babel.def 2020/02/28 3.41 Babel common definitions
-\babel@savecnt=\count290
+\babel@savecnt=\count291
 \U@D=\dimen184
 
 ("C:\Program Files\MiKTeX 2.9\tex/generic/babel\txtbabel.def")
 \bbl@readstream=\read2
-\bbl@dirlevel=\count291
+\bbl@dirlevel=\count292
 )
-\es@quottoks=\toks23
-\es@quotdepth=\count292
+\es@quottoks=\toks25
+\es@quotdepth=\count293
 Package babel Info: Making " an active character on input line 561.
 Package babel Info: Making . an active character on input line 662.
 Package babel Info: Making < an active character on input line 707.
@@ -339,42 +351,42 @@ LaTeX Info: Redefining \% on input line 7.
 )
 \openout1 = `quimica.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
 LaTeX Font Info:    Trying to load font information for OT1+phv on input line 2
-7.
+9.
  ("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ot1phv.fd"
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
 
-Package chemgreek Info: Activating mapping `default' on line 27.
+Package chemgreek Info: Activating mapping `default' on line 29.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count293
+\scratchcounter=\count294
 \scratchdimen=\dimen185
-\scratchbox=\box57
-\nofMPsegments=\count294
-\nofMParguments=\count295
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count296
+\scratchbox=\box59
+\nofMPsegments=\count295
+\nofMParguments=\count296
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count297
 \MPscratchDim=\dimen186
-\MPnumerator=\count297
-\makeMPintoPDFobject=\count298
-\everyMPtoPDFconversion=\toks25
+\MPnumerator=\count298
+\makeMPintoPDFobject=\count299
+\everyMPtoPDFconversion=\toks27
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 
@@ -454,41 +466,74 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \. on input line 27.
-LaTeX Info: Redefining \% on input line 27.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
+LaTeX Info: Redefining \. on input line 29.
+LaTeX Info: Redefining \% on input line 29.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 29.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 29.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{C:/Users/usuario/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (quimica.
-aux
+{C:/Users/usuario/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+<figures/moeller.jpg, id=9, 296.60812pt x 327.47343pt>
+File: figures/moeller.jpg Graphic file (type jpg)
+<use figures/moeller.jpg>
+Package pdftex.def Info: figures/moeller.jpg  used on input line 104.
+(pdftex.def)             Requested size: 96.73788pt x 106.80237pt.
+<figures/ptable_orbitals.png.jpg, id=10, 1239.88219pt x 645.91313pt>
+File: figures/ptable_orbitals.png.jpg Graphic file (type jpg)
+<use figures/ptable_orbitals.png.jpg>
+Package pdftex.def Info: figures/ptable_orbitals.png.jpg  used on input line 11
+9.
+(pdftex.def)             Requested size: 386.95897pt x 201.58125pt.
+ [2 <./figures/moeller.jpg>]
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 1
+39.
+("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ts1phv.fd"
+File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
+) [3 <./figures/ptable_orbitals.png.jpg>] [4]
+<figures/IR.jpg, id=26, 545.03625pt x 374.90062pt>
+File: figures/IR.jpg Graphic file (type jpg)
+<use figures/IR.jpg>
+Package pdftex.def Info: figures/IR.jpg  used on input line 243.
+(pdftex.def)             Requested size: 241.84843pt x 166.35258pt.
+<figures/tabla_IR.jpg, id=27, 606.01407pt x 150.5625pt>
+File: figures/tabla_IR.jpg Graphic file (type jpg)
+<use figures/tabla_IR.jpg>
+Package pdftex.def Info: figures/tabla_IR.jpg  used on input line 251.
+(pdftex.def)             Requested size: 338.58632pt x 84.12143pt.
+ [5 <./figures/IR.jpg> <./figures/tabla_IR.jpg>]
+[6] (quimica.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 ) ) 
 Here is how much of TeX's memory you used:
- 10111 strings out of 480934
- 194036 string characters out of 2909675
- 545644 words of memory out of 3000000
- 25834 multiletter control sequences out of 15000+200000
- 552288 words of font info for 75 fonts, out of 3000000 for 9000
+ 10288 strings out of 480934
+ 196759 string characters out of 2909675
+ 552814 words of memory out of 3000000
+ 25987 multiletter control sequences out of 15000+200000
+ 560301 words of font info for 85 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,6n,47p,360b,382s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 46i,12n,53p,629b,529s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helve
-tic/uhvr8a.pfb>
-Output written on quimica.pdf (1 page, 36882 bytes).
+9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy1
+0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on quimica.pdf (6 pages, 609310 bytes).
 PDF statistics:
- 23 PDF objects out of 1000 (max. 8388607)
+ 66 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
