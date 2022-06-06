@@ -12,3 +12,7 @@ Estos apuntes estan hechos de acuerdo con los exámenes de selectividad de catal
 [MATES](https://github.com/tomiock/sele-2022/blob/main/mates/mates.pdf)
 
 [QUÍMICA](https://github.com/tomiock/sele-2022/blob/main/quimica/quimica.pdf)
+
+[CASTELLANO](https://github.com/tomiock/sele-2022/blob/main/castellano/castellano.pdf)
+
+[CATALÁN](https://github.com/tomiock/sele-2022/blob/main/catalan/catalan.pdf)
