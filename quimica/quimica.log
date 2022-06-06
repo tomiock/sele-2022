@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.12.18)  4 JUN 2022 11:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.12.18)  6 JUN 2022 05:33
 entering extended mode
 **./quimica.tex
 (quimica.tex
@@ -351,27 +351,27 @@ LaTeX Info: Redefining \% on input line 7.
 )
 \openout1 = `quimica.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Trying to load font information for OT1+phv on input line 2
-9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 3
+0.
  ("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ot1phv.fd"
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
 
-Package chemgreek Info: Activating mapping `default' on line 29.
+Package chemgreek Info: Activating mapping `default' on line 30.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
@@ -466,14 +466,14 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \. on input line 29.
-LaTeX Info: Redefining \% on input line 29.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 29.
+LaTeX Info: Redefining \. on input line 30.
+LaTeX Info: Redefining \% on input line 30.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 30.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 29.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 30.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
@@ -484,56 +484,130 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <figures/moeller.jpg, id=9, 296.60812pt x 327.47343pt>
 File: figures/moeller.jpg Graphic file (type jpg)
 <use figures/moeller.jpg>
-Package pdftex.def Info: figures/moeller.jpg  used on input line 104.
+Package pdftex.def Info: figures/moeller.jpg  used on input line 105.
 (pdftex.def)             Requested size: 96.73788pt x 106.80237pt.
 <figures/ptable_orbitals.png.jpg, id=10, 1239.88219pt x 645.91313pt>
 File: figures/ptable_orbitals.png.jpg Graphic file (type jpg)
 <use figures/ptable_orbitals.png.jpg>
-Package pdftex.def Info: figures/ptable_orbitals.png.jpg  used on input line 11
-9.
+Package pdftex.def Info: figures/ptable_orbitals.png.jpg  used on input line 12
+0.
 (pdftex.def)             Requested size: 386.95897pt x 201.58125pt.
  [2 <./figures/moeller.jpg>]
 LaTeX Font Info:    Trying to load font information for TS1+phv on input line 1
-39.
+40.
 ("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ts1phv.fd"
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 ) [3 <./figures/ptable_orbitals.png.jpg>] [4]
 <figures/IR.jpg, id=26, 545.03625pt x 374.90062pt>
 File: figures/IR.jpg Graphic file (type jpg)
 <use figures/IR.jpg>
-Package pdftex.def Info: figures/IR.jpg  used on input line 243.
+Package pdftex.def Info: figures/IR.jpg  used on input line 244.
 (pdftex.def)             Requested size: 241.84843pt x 166.35258pt.
 <figures/tabla_IR.jpg, id=27, 606.01407pt x 150.5625pt>
 File: figures/tabla_IR.jpg Graphic file (type jpg)
 <use figures/tabla_IR.jpg>
-Package pdftex.def Info: figures/tabla_IR.jpg  used on input line 251.
+Package pdftex.def Info: figures/tabla_IR.jpg  used on input line 252.
 (pdftex.def)             Requested size: 338.58632pt x 84.12143pt.
+<figures/RMN.jpg, id=28, 474.27188pt x 342.5297pt>
+File: figures/RMN.jpg Graphic file (type jpg)
+<use figures/RMN.jpg>
+Package pdftex.def Info: figures/RMN.jpg  used on input line 271.
+(pdftex.def)             Requested size: 241.84843pt x 174.66692pt.
  [5 <./figures/IR.jpg> <./figures/tabla_IR.jpg>]
-[6] (quimica.aux
+<figures/espec_masa.jpg, id=32, 734.745pt x 492.33937pt>
+File: figures/espec_masa.jpg Graphic file (type jpg)
+<use figures/espec_masa.jpg>
+Package pdftex.def Info: figures/espec_masa.jpg  used on input line 292.
+(pdftex.def)             Requested size: 241.84843pt x 162.0593pt.
+
+[6 <./figures/RMN.jpg> <./figures/espec_masa.jpg>]
+<figures/diagrama_fases.png, id=39, 1204.5pt x 928.46875pt>
+File: figures/diagrama_fases.png Graphic file (type png)
+<use figures/diagrama_fases.png>
+Package pdftex.def Info: figures/diagrama_fases.png  used on input line 358.
+(pdftex.def)             Requested size: 241.84843pt x 186.413pt.
+ [7] [8 <./figures/diagrama_fases.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 428--430
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 431--438
+
+ []
+
+[9]
+<figures/diagrama_H.jpg, id=56, 508.90125pt x 236.38312pt>
+File: figures/diagrama_H.jpg Graphic file (type jpg)
+<use figures/diagrama_H.jpg>
+Package pdftex.def Info: figures/diagrama_H.jpg  used on input line 495.
+(pdftex.def)             Requested size: 241.84843pt x 112.33725pt.
+<figures/diagrama2_h.jpg, id=57, 322.20375pt x 204.765pt>
+File: figures/diagrama2_h.jpg Graphic file (type jpg)
+<use figures/diagrama2_h.jpg>
+Package pdftex.def Info: figures/diagrama2_h.jpg  used on input line 502.
+(pdftex.def)             Requested size: 241.84843pt x 153.70457pt.
+ [10 <./figures/diagrama_H.jpg> <./figures/diagrama2_h.jpg>]
+<figures/born-haber.png, id=61, 531.9875pt x 252.945pt>
+File: figures/born-haber.png Graphic file (type png)
+<use figures/born-haber.png>
+Package pdftex.def Info: figures/born-haber.png  used on input line 529.
+(pdftex.def)             Requested size: 290.22107pt x 137.99316pt.
+ [11 <./figures/born-haber.png (PNG copy)>]
+<figures/diagrama_fase.jpg, id=65, 347.04657pt x 268.75406pt>
+File: figures/diagrama_fase.jpg Graphic file (type jpg)
+<use figures/diagrama_fase.jpg>
+Package pdftex.def Info: figures/diagrama_fase.jpg  used on input line 553.
+(pdftex.def)             Requested size: 241.84843pt x 187.29408pt.
+ [12 <./figures/diagrama_fase.jpg>]
+<figures/tabla_Kc.jpg, id=69, 553.31718pt x 143.78719pt>
+File: figures/tabla_Kc.jpg Graphic file (type jpg)
+<use figures/tabla_Kc.jpg>
+Package pdftex.def Info: figures/tabla_Kc.jpg  used on input line 642.
+(pdftex.def)             Requested size: 338.58632pt x 87.9865pt.
+ [13]
+<figures/tabla2_Kc.jpg, id=75, 401.24907pt x 97.86563pt>
+File: figures/tabla2_Kc.jpg Graphic file (type jpg)
+<use figures/tabla2_Kc.jpg>
+Package pdftex.def Info: figures/tabla2_Kc.jpg  used on input line 650.
+(pdftex.def)             Requested size: 338.58632pt x 82.58734pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 657--658
+
+ []
+
+[14 <./figures/tabla_Kc.jpg> <./figures/tabla2_Kc.jpg>] (quimica.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 ) ) 
 Here is how much of TeX's memory you used:
- 10288 strings out of 480934
- 196759 string characters out of 2909675
- 552814 words of memory out of 3000000
- 25987 multiletter control sequences out of 15000+200000
- 560301 words of font info for 85 fonts, out of 3000000 for 9000
+ 10405 strings out of 480934
+ 198990 string characters out of 2909675
+ 552904 words of memory out of 3000000
+ 26086 multiletter control sequences out of 15000+200000
+ 563058 words of font info for 94 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,12n,53p,629b,529s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 52i,15n,76p,737b,659s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy1
-0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on quimica.pdf (6 pages, 609310 bytes).
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
+y8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on quimica.pdf (14 pages, 966595 bytes).
 PDF statistics:
- 66 PDF objects out of 1000 (max. 8388607)
+ 136 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

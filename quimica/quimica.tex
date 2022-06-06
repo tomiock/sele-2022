@@ -15,6 +15,7 @@
 \usepackage{graphicx}
 \usepackage{cancel}
 \usepackage{float}
+\usepackage{siunitx}
 \usepackage{subcaption}
 \usepackage[labelfont=sc, font={footnotesize, singlespacing}]{caption}
 \usepackage[margin=2cm]{geometry}  
@@ -265,8 +266,399 @@ Una RMN mide el desplazamiento químico entre un núcleo de hidrógeno respecto 
 \end{equation*}
 
 El desplazamiento $\delta$ está en un rango de $0$ a $12$. Es una medida que nos dice como de parecidos son los hidrógenos según su entorno. Concretamente sobre la distancia (número de enlaces) a los que están un par de hidrógenos. Aquí hay un ejemplo de un espectro con una explicación para interpretarlo:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\linewidth]{figures/RMN}
+	\caption{Los hidrógenos verdes solo 'detectan' a los azules ya que están enlazados a un carbono y a tres enlaces de distancia (los cuatro picos más a la izquierda). Los picos siempre van a ser una más que los carbonos del mismo tipo que se detectan. Podemos ver como el hidrógeno rojo solo generar un pico (él mismo), ja que no 'detecta' a ninguno otro porque no está enlazado a un carbono. Finalmente los azules solo detectan a lo dos verdes (por eso tres picos), también sus picos serán más altos debido a que más hidrógenos los generan (tres de ellos comparado con los 2 de los verdes).}
+	\label{fig:rmn}
+\end{figure}
+
+Resumidamente:
+\begin{itemize}
+\item Solo se detectan hidrógenos entre si cuando hay carbonos de por medio y están a tres o menos enlaces de distancia. 
+
+\item Los hidrógenos que están enlazados al mismo carbono se detectan entre ellos de forma que forman picos de mayor intensidad. 
+
+\item Asimismo si los hidrógenos detectan a varios hidrógenos de un mismo entorno, el pico que forman es mayor en intensidad. 
+
+\item Los picos tendrán están en grupos de $n+1$ hidrógenos detectados. 
+
+\end{itemize}
+
+\subsubsection{Espectrometro de masas}	
+En esta técnica de identificación de sustancias, estas de vaporizar de forma que liberan cationes que pueden ser detectados para analizar su masa y de esta manera averiguar de que sustancia se trata. Para obtener los fragmento, se vaporiza la sustancia y es bombardeada con un flujo de electrones para poder obtener los cationes (fragmentos con carga positiva de la sustancia). Estos se detectan de tal manera que podemos saber tanto su masa como la cantidad de ellos que hay, de esta manera obtenemos una gráfica como esta:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\linewidth]{figures/espec_masa}
+	\caption{Espectrometro de masas del 2-hexeno. Podemos ver como el ion molecular $\ce{M^}$ con una masa de 84 es el primer pico. El más alto es el de masa 55 que coincide con $\ce{CH_3-CH=CH-CH_2}$}
+	\label{fig:especmasa}
+\end{figure}
+
+\pagebreak
+En todos los espectros de este tipo hay un pico que corresponde al ion molecular, que es simplemente la molécula analizada pero con carga positiva. Usualmente es el pico con más masa, pero es común observar un pico con un hidrógeno debido a que este se fusiona al ion molecular durante el bombardeo de electrones. No obstante, el pico del ion molécula suele ser mucho más alto, y por lo tanto más reconocible. 
+
+Los puntos de ruptura más comunes son:
+\begin{itemize}
+\item Hidrocarburos: enlaces sencillos tipo $\ce{C-C}$
+\item Alcoholes, aminas y éteres: carbono junto al nitrógeno/oxigeno y carbono siguiente.
+\item Ésters, aldehidos y cetonas: carbono del grupo carbonilo y el átomo siguiente.
+\end{itemize}
+
+Usualmente se compara entre dos gráficas o se tiene que justificar la relación entre una gráfica y una molécula. En ambos casos conviene mirar al ion molecular para saber si la gráfica tiene que ver algo con la molécula. 
+
+\subsection{Gases}
+
+\subsubsection{Temperatura y $E_{k}$}
+Existe una relación entre la temperatura de un gas y la energía cinética media de sus partículas $E_{k}$. Intuitivamente podemos ver que es una relación directamente proporcional lineal. Cuando una és más grande, la otra también. 
+
+La energía cinética media de un gas es:
+\begin{equation*}
+	\overline{E_{k}} = \frac32 kT
+\end{equation*}
+Donde $k$ es la constante de Boltzmann ($1.38\cross10^{-23}\si{J/K}$) y $T$ la temperatura en Kelvin. 
+
+\subsubsection{Velocidad de Difusión}
+Definimos velocidad de difusión como la velocidad a la cual un gas se distribuye uniformemente por el espacio. 
+
+La Ley de Graham nos dice que esta velocidad es inversamente proporcional a la raíz cuadrada de su densidad (comparando dos gases distintos):
+\begin{equation*}
+	\frac{v_{1}}{v_{2}} = \frac{\sqrt{d_{2}}}{\sqrt{d_{1}}}
+\end{equation*}
+\begin{equation*}
+	\frac{v_{1}}{v_{2}} = \frac{\sqrt{\frac{m_{2}}{V_{2}}}}{\sqrt{\frac{m_{1}}{V_{1}}}}
+\end{equation*}
+Debido a que los volúmenes son los mismo $V_{1} = V_{2}$, finalmente tenemos que:
+\begin{equation*}
+	\frac{v_{1}}{v_{2}} = \frac{\sqrt{m_{2}}}{\sqrt{m_{1}}}
+\end{equation*}
 
 
-	
-	
+\subsubsection{Modelo de los Gases}
+
+¿Por que hay una diferencia entre la ley de los gases ideales $pV = nRT$ y su comportamiento real?
+Para ello hemos de mirar en que se basa el modelo de los gases ideales:
+\begin{itemize}
+\item Están formados por partículas que se mueven constantemente.
+\item El tamaño de las partículas es negligible comparado con el volumen del recipiente. 
+\item Las fuerzas de atracción/repulsión entre las partículas son negligibles. 
+\item Los choques entre partículas son perfectamente elásticos. 
+\item A la mismo temperatura, la $\overline{E_{k}}$ de las partículas se mantiene constante. 
+\end{itemize}
+
+A partir de estos principios y pensando (no se como) podemos llegar a estas conclusiones:
+\begin{itemize}
+\item A altas presiones, el tamaño de las partículas es considerable frente al volumen del recipiente. 
+\item Las fuerzas de atracción entre las moléculas no se pueden ignorar.
+\end{itemize}
+
+\subsubsection{Licuación de un gas}
+Cuando se comprime un gas lo suficiente es posible que este pase a estar en fase líquida. Pero para que esto pase la temperatura ha de estar por debajo del punto crítico (en el diagrama de fases). Por arriba de la temperatura crítica es imposible licuidar un gas. El punto crítico es el que se encuentra arriba a la derecha en los diagramas de fase. En este punto, la sustancia se debe de considerar un gas y un líquido al mismo tiempo.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\linewidth]{figures/diagrama_fases}
+	\caption{En este diagrama se pueden ver el punto crítico arriba a la derecha, junto a la zona donde el fluido está en estado supercrítico. Solo para las temperaturas por debajo de la temperatura supercrítica $T_{\text{cr}}$ se puede licuidar el gas. }
+	\label{fig:diagramafases}
+\end{figure}
+
+\section{Los cambios de energía en las reacciones químicas}
+
+\subsection{Importancia de saber esto}
+Saber esto (esta sección) de los apuntes es muy importante porque asi podemos saber la cantidad de energía que generan diversas reacciones para de esta manera tener procesos industriales más eficientes. Esto es especialmente útil cuando hablamos de las reacciones de combustión de compuestos orgánicos. 
+
+\subsection{Energía Interna y Entalpía}
+\subsubsection{Energía Interna}
+La suma de todas las energías que (cinética, potencial, vibratoria...) que forman parte de una sustancia se denomina energía interna. Esta energía solo se transferir al entorno en forma de calor o trabajo. Para entender este concepto a escala microscópica podemos pensar en la suma de las energías de una o varias partículas. 
+
+La variación de energía interna $\Delta U$ de un sistema es igual a la calor $Q$ y el trabajo $W$ sumados:
+\begin{equation*}
+	\Delta U = Q + W
+\end{equation*}
+Donde está definida a partir de la variación de temperatura $\Delta T$ y la calor especifica $C_{e}$ de una sustancia, junto a la masa de la muestra que trasfiere esa calor:
+\begin{equation*}
+	Q = mC_{e}\Delta T
+\end{equation*}
+
+Y el trabajo como:
+\begin{equation*}
+	W = -p_{\text{ext}}S\Delta x = F_{\text{ext}}\Delta x
+\end{equation*}
+Donde $-p_{\text{exp}}$ es la presión externa y $S$ es la superficie donde actúa la fuerza $F_{\text{ext}}$ que desplaza un cuerpo una distancia de $\Delta x$. En este caso, consideramos que la fuerza está definida por la presión y la superficie a la cual se aplica $F=pS$. 
+
+Podemos ver como en una reacción en la cual el volumen es constante $\Delta V$, la única forma en la que puede variar la energía interna es a través de la calor:
+\begin{equation*}
+	\Delta U = Q_{v}
+\end{equation*}
+En toda reacción a volumen constante, la variación de energía interna solo es causada por la transferencia de calor durante el proceso. 
+
+\subsubsection{Entalpía}
+La entalpía es la suma de la energía interna y $pV$:
+\begin{equation*}
+	H = U + pV
+\end{equation*}
+
+A partir de la definición de la energía interna, podemos ver que en una reacción a presión constante, la única manera de transferir calor coincide con la variación de la entalpía:
+\begin{equation*}
+	\Delta H = Q_{p}
+\end{equation*}
+Con ella, podemos saber si una reacción es exotérmica (libera calor) o endotérmica (absorbe calor):
+\begin{align*}
+	\Delta H < 0 \text{ proceso exotérmico} \\
+	\Delta H > 0 \text{ proceso endotérmico}
+\end{align*}
+
+También podemos ver como para todas las reacciones entre gases en las cuales los moles de productos y reactivos no varia, la entalpía y energía interna son iguales:
+\begin{align*}
+	Q_{p} = Q_{p} \\ \Delta H = \Delta U
+\end{align*}
+
+Podemos determinar la variación de la entalpía de una reacción como la resta de la entalpía de formación de sus productos con la de sus reactivos:
+\begin{equation}
+	\Delta H_{r} = \sum n_{p}\Delta H_{fp} - \sum n_{r}\Delta H_{fr}
+\label{delta_H}
+\end{equation}
+Esta fórmula es que usualmente se tiene que utilizar para calcular la entalpía de una reacción con los datos que te dan sobre las entalpias de formación de las sustancias que forman parte de la reacción. 
+
+\subsubsection{Experimento para determinar Entalpía/Energía Interna}
+
+Concretamente se ha de conocer la determinación experimental de la calor de una reacción. A 
+continuación hay un fragmento de una corrección de uno de estos ejercicios:
+
+\line(1,0){450}
+
+\textbf{Procediment experimental per determinar $\Delta H$ d'una dissolució:}
+\\
+
+En un \underline{calorímetre} hi col·loquem \underline{un determinat volum d’aigua} (o \underline{una determinada
+massa d’aigua}) i mesurem la \underline{temperatura inicial}. Posteriorment, afegim una
+\underline{determinada massa de NH4NO3 sòlid al calorímetre}. Agitem ràpidament la mescla per
+dissoldre tot el sòlid, tapem el calorímetre i esperem un temps fins que la temperatura
+que ens marca el termòmetre deixi de baixar (s’estabilitzi). Mesurem aquesta
+\underline{temperatura final}.
+\\
+
+\underline{Material}:
+\begin{itemize}
+\item Calorímetre (per exemple un vas de plàstic amb tapa i aïllat).
+\item Termòmetre.
+\item Balança (i pipeta o proveta si \underline{mesurem el volum d’aigua}).
+
+\end{itemize}
+
+
+\underline{Mesures experimentals que necessitem}:
+\begin{itemize}
+\item Massa de NH4NO3 i massa o volum de l’aigua.
+\item Temperatura inicial de l’aigua, i temperatura final de la solució una vegada s’ha
+estabilitzat.
+\end{itemize}
+
+
+\underline{Altres dades que necessitem per calcular la $\Delta H$ de la dissolució}:
+\begin{itemize}
+\item Capacitat calorífica de la solució 
+\end{itemize}
+
+\line(2,0){450}
+\\
+Lo más importante es tener en cuenta se da lugar la reacción, es decir, como la ponemos en marcha por así decirlo. Porque todo lo otro será igual para cualquier medida de la calor que se haga, sin importar la reacción (e.g. medida de la temperatura final y inicial). 
+\pagebreak
+\subsubsection{Relación entre entalpía y energía interna}
+
+Simplemente se ha de saber que cuando es una reacción a volumen constante, se ha de calcular al variación en energía interna $\Delta U$ y cuando es una reacción a presión constante, se ha de calcular la entalpía $\Delta H$. 
+
+También tengo que decir que hay varios tipos de entalpía:
+\begin{itemize}
+\item Entalpía Reacción: Calor que libera una reacción al suceder. Se calcula con la fórmula \ref{delta_H}. 
+
+\item Entalpía Formación: Energía necesaria para formar un mol de producto. Para las sustancias puras, es $0\,\si{J/mol}$. 
+
+\item Entalpía Combustión: Es la entalpía de reacción pero para una combustión. Son todas negativas, ya que son exotérmicas. 
+\end{itemize}
+
+\subsection{Ley de Hess, Diagramas de Entalpias}
+
+\subsubsection{Ley de Hess}
+Tiene mucha lógica esto, esta ley dice que se pueden encadenar las reacciones pensando que una reacción es como una suma algebraica. Por ejemplo, una reacción expresada como una suma algebraica de otras reacciones, tiene una entalpía que es la suma algebraica de las entalpias de las otras reacciones. 
+
+En otras palabras:
+\begin{equation*}
+	A \rightarrow B; \, B \rightarrow C; \, C\rightarrow D
+\end{equation*}
+\begin{equation*}
+	A \rightarrow B \rightarrow C \rightarrow D
+\end{equation*}
+
+\subsubsection{Diagramas de Entalpias}
+Normalmente la entalpía de una reacción se puede expresar con los siguientes diagramas:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\linewidth]{figures/diagrama_H}
+	\caption{En estos dos diagramas, se puede ver como el primero es endotérmico y el segundo exotérmico.}
+	\label{fig:diagramah}
+\end{figure}
+Pueden llegar a complicarse mucho como este de aquí:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\linewidth]{figures/diagrama2_h}
+	\caption{Diagrama de entalpias usando la Ley de Hess. La reacción es $\ce{C_{6}H_{12}O_{6} + 6O_{2}\rightarrow 6CO_{2} + 6H_{2}O}$. En este caso se calcula primero la entalpía de formación del \ce{C_{6}H_{12}O_{6}}, para luego calcular la entalpía de la reacción.}
+	\label{fig:diagrama2h}
+\end{figure}
+\pagebreak
+
+\subsection{Entalpía de Enlaces}
+En las reacción se rompen y forman enlaces, y pues tiene sentido que haya una energía asociado a la rotura de los enlaces, a esta energía la llamamos Entalpía de Enlace. 
+
+Podemos definir la entalpía de una reacción a partir de la entalpía de los enlaces:
+\begin{equation*}
+	\Delta H^{\circ}_{\text{reacción}} = \sum \text{Energía enlaces rotos} - \sum\text{Energía enlaces formados}
+\end{equation*}
+
+Intuitivamente se pueden ver de que factores depende la energía/entalpía de un enlaces: 
+\begin{itemize}
+\item La longitud afecta inversamente, cuando más lejos, más débil es
+\item Si es un enlace covalente, el carácter que tiene afecta a la energía (simple, doble, triple)
+
+\end{itemize}
+
+\subsection{Entalpía Reticular Iónica}
+Como ya he dicho antes, es la energía que se desprende cuando se forma un mol de compuesto iónico a partir de sus iones a distancia infinita y estado gaseoso.
+
+Para entender como se calcula podemos mirar el ciclo de Born-Haber, que es el ciclo que la describe:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\linewidth]{figures/born-haber}
+	\caption{Ciclo de Born-Haber que describe la energía reticular del cloruro de sodio $\ce{NaCl}$, la sal de toda la vida. }
+	\label{fig:born-haber}
+\end{figure}
+
+Debido a que empezamos con una sustancia sólida (el sodio) y la tenemos tener en estado gaseoso, tenemos que sublimarla (con $\Delta H_{\text{sub}}$), también necesitamos un átomo de cloro que al principio se encuentra en estado gaseoso diátomico ($\ce{Cl_2}$), por lo tanto tenemos que disasociarlo ( con $\Delta H_{\text{diss}}$). A causa de que tiene que reaccionar en forma de iones ($\ce{Na^+ + Cl^-}$) tenemos que ionizar el sodio y cloro con la energía de ionización ($E_{i}$) y la afinidad electrónica ($E_{af}$), respectivamente.  
+
+Al mirar el ciclo podemos ver que la energía reticular se puede calcular con esta formula:
+\begin{equation*}
+	E_{\text{reticular}} = \Delta H^{\circ}_{f} - \left(\Delta H_{\text{sub}} + \Delta H_{\text{diss}} + E_{i} + E_{af}\right)
+\end{equation*}
+
+Calcularla en un ejercicio es muy fácil porque te dan los datos que necesitas (recuerda que tienen que ser 4 energías distintas por si acaso) pero si que hay que tener en cuenta como se pone la resta en la ecuación, pero recordando como se expresa la entalpía de formación es muy fácil averiguarlo:
+\begin{equation*}
+	\Delta H^{\circ}_{f} = E_{\text{reticular}} + \Delta H_{\text{sub}} + \Delta H_{\text{diss}} + E_{i} + E_{af}
+\end{equation*}
+
+\pagebreak
+\section{Los Equilibrios de Fase y Equilibro Químico}
+
+\subsection{Equilibrios y Diagramas de Fase}
+Como ya sabemos, una sustancia se puede encontrar en diversas fases dependiendo de la temperatura y presión a la que esto, este fenómeno se representa muy bien en diagramas de fase como este:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\linewidth]{figures/diagrama_fase}
+	\caption{Diagrama de fase del $\ce{CO2}$, podemos ver representados el punto triple y el punto crítico.}
+	\label{fig:diagramafase}
+\end{figure}
+
+Lo más importante sobre estos diagramas es saber interpretarlos, la cual diría que es bastante fácil. Primero de todo tenemos que tener en cuenta que hay dos puntos 'especiales':
+\begin{itemize}
+\item Punto Triple: Un punto del diagrama en el cual a una determinada temperatura y presión, una sustancia está al mismo tiempo entre las tres bases. En otras palabras, hay un equilibrio de las tres fases. 
+
+\item Punto Crítico: Punto en el cual la sustancia es un gas y un líquido al mismo tiempo. La temperatura asociada a este punto (temperatura crítica) es la temperatura máxima a la que puede existir esta sustancia en estado líquido. 
+\end{itemize}
+ 
+Para hacer los ejercicios hay que saber que nombre tienen los cambios de estados (sublimación, solidificación, vaporización, condensación...). Lo típico que se estudia en la ESO. También hay que saber construirlos (los del agua y dióxido de carbono, sobretodo) a partir de datos que te dan, o que los tienes que completar. 
+
+\subsection{Equilibrio Químico}
+
+Las reacciones pueden ser reversibles, y a veces pasa que tienen que llegar a un equilibrio químico en el cual los sigue habiendo una cantidad de reactivos (la reacción no es completa). Una de estas reacciones es por ejemplo:
+\begin{equation*}
+	\ce{2NO + O_2 <=> 2NO2}
+\end{equation*}
+
+En todas las reacciones de equilibrio se cumplen las siguientes condiciones:
+\begin{enumerate}
+\item Las reacciones directa y inversa son termodinámicamente posibles en determinadas condiciones.
+\item Se llega al equilibrio cuando la reacción directa y inversa tienen la misma velocidad. 
+\item El estado de equilibrio es dinámico (tanto los reactivos como productos pueden formarse en cualquier momento). Pero este hecho no es perceptible macroscópicamente. 
+\item La temperatura marca las proporciones a las cuales están los productos y reactivos cuando están en equilibrio. A parte de estas hay otras condiciones que pueden afectar. 
+\end{enumerate}
+
+\subsubsection{Equilibrios Heteros y Homos}
+Se llama equilibrio heterogéneo a un equilibrio en el cual hay sustancias en diversas fases de estado involucradas. Normalmente son disoluciones en las cuales la solubilidad del soluto (un de los reactivos usualmente) está determinada por un equilibrio químico. Este tipo de equilibrios los veremos más adelante. 
+
+\subsubsection{Constantes de Equilibrio $K_{c}$ y $K_{p}$}
+
+Para una reacción química reversible de tipo:
+\begin{equation*}
+	\ce{aA + bB <=> cC + dD}\,,
+\end{equation*}
+se puede definir una constante de equilibrio $K_{c}$\footnote{Los productos siempre van arriba, con los reactivos abajo.}:
+\begin{equation*}
+	K_{c} = \frac{[C]^{c}[D]^{d}}{[A]^{a}[B]^{b}}
+\end{equation*}
+
+También existe una constante de equilibrio de presión $K_{p}$, definida como:
+\begin{equation*}
+	K_{p} = \frac{p_{C}^{c}p_{D}^{d}}{p_{A}^{a}p_{B}^{b}}
+\end{equation*}
+
+Podemos ver como para sustancias gaseosas y a partir de la ley de los gases ideales, podemos definir concentración de un gas como:
+\begin{equation*}
+	\frac{n_{i}}{V} = \frac{p_{i}}{RT}
+\end{equation*}
+Si hacemos una proporción entre concentraciones de dos sustancias tenemos que:
+\begin{equation*}
+	\frac{n_{i}/V}{n'_{i}/V} = \frac{p_{i}}{p'_{i}}
+\end{equation*}
+Debido a que en un equilibrio las sustancias están con el mismo volumen y las concentraciones están en cocientes, finalmente podemos definir una constante de equilibrio que depende de las presiones parciales de los compuestos involucrados en el equilibrio:
+\begin{equation*}
+	K_{p} = \frac{p_{C}^{c}p_{D}^{d}}{p_{A}^{a}p_{B}^{b}}
+\end{equation*}
+
+Conviene saber como calcular estas constantes para reacciones como las de la formación del amoniaco, la reacción de descomposición del carbonato de calcio y una reacción de esterificación. 
+
+\subsection{Cocientes de Equilibrio $Q_{c}$ y $Q_{p}$}
+
+Para un momento concreto con unas concentraciones en concreto existe un cociente de equilibrio $Q_{c}$ que determina como de cerca están estas concentraciones de llegar al equilibrio:
+\begin{equation*}
+	Q_{c} = \frac{[C]^{c}[D]^{d}}{[A]^{a}[B]^{b}}
+\end{equation*}
+Podemos ver que es igual que la constante en cuanto a su cálculo, pero lo que importa es que es lo que significan las concentraciones, si son las que están en equilibrio. La cuestión es esta:
+\begin{itemize}
+\item $Q_{c} < K_{c}$:\\
+La reacción se da en el sentido directo, hacia la derecha.
+
+\item $Q_{c} > K_{c}$:\\
+La reacción se da en el sentido inverso, hacia la izquierda. 
+
+\item $Q_{c} = K_{c}$:\\
+Está en una situación de equilibrio. 
+\end{itemize}
+
+Como regla para memorizar: \\
+La reacción va en sentido de la boca del tiburón (la boca es $<$), pero claro SIEMPRE hay poner la $Q_{c}$ primero y luego la $K_{c}$, esto grabado a grabado fuego (un tatuaje). 
+
+\subsubsection{Cálculo con las constantes y los cocientes}
+
+Se puede ver que a través de la $K_{c}$ y del cociente $Q_{c}$. Pero lo que es muy importante es hacer este tipo de esquemas/tablas:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{figures/tabla_Kc}
+	\caption{Tabla asociada a las concentraciones en un equilibrio de la reacción para la formación de dióxido de carbono. $x$ es la cantidad de concentración que varia una vez se llega al equilibrio. Se puede ver como los datos de la tabla variarían según cuales son las concentraciones iniciales. También hay que tener en cuenta las estequiometría implicada, porque los cocientes serían multiplicados por las concentraciones.}
+	\label{fig:tablakc}
+\end{figure}
+
+Aunque usualmente, estas tablas se parecen más a esta:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{figures/tabla2_Kc}
+	\caption{En este caso podemos ver como se empieza solo con reactivos y al final hay una concentración $x$ para cada producto. Esta tabla corresponde a otro tema pero la he escogido como ejemplo. Ya se hablará de ella con más detenimiento en el futuro. }
+	\label{fig:tabla2kc}
+\end{figure}
+
+\subsubsection{Factores que afectan a la constante de equilibrio}
+
+\textbf{Ley de Le Châtelier}: \\
+
+
+
+
+
+
 \end{document}
