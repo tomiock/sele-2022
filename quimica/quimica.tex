@@ -652,12 +652,141 @@ Aunque usualmente, estas tablas se parecen más a esta:
 	\label{fig:tabla2kc}
 \end{figure}
 
-\subsubsection{Factores que afectan a la constante de equilibrio}
+\subsection{Factores que afectan a la constante de equilibrio}
 
 \textbf{Ley de Le Châtelier}: \\
+Lo mejor es entender este principio con estas tablas: \\
 
 
+\begin{equation*}
+	\begin{array}{cc}
+		\textbf{Dependiendo de $V$ y $P$:} \qquad &	\textbf{Exotérmica o Endotérmica:} \\	
+		
+		
+	\begin{tabular}{|c|c|}
+		\hline
+		$\downarrow V\, \uparrow P$  & $\Rightarrow$ \\
+		\hline
+		$\uparrow V\, \downarrow P$ & $\Leftarrow$ \\
+		\hline
+	\end{tabular}
 
+	\qquad &
+	
+	\begin{tabular}{|c|c|c|} 
+		\hline
+		$\Delta H <0$ & $\Delta H > 0$  &  \\
+		\hline
+		$\downarrow T$  & $\uparrow T$ & $\Leftarrow$ \\
+		\hline
+		$\uparrow T$ & $\downarrow T$ & $\Rightarrow$ \\
+		\hline
+	\end{tabular}
+\end{array}
+\end{equation*}
+
+Yo las memorizaría y escribiría al principio del examen, al igual que el Diagrama de Moeller por cierto. 
+
+\section{Equilibrios Químicos Iónicos}
+\subsection{Introducción a los ácidos y bases}
+Se define a un ácido como una sustancia $\ce{HA}$ que al estar diluida en agua reacciona como:
+\begin{equation*}
+	\ce{HA_{(aq)} <=> A^-_{(aq)} + H^+_{(aq)}}
+\end{equation*}
+
+Y a una base como una sustancia $\ce{BOH}$ que reacciona como:
+\begin{equation*}
+	\ce{BOH_{(aq)} <=> B^+_{(aq)} + OH^-_{(aq)}}
+\end{equation*}
+
+Notesé que he escrito las reacciones como equilibrios químicos, cuando en realidad las bases y ácidos fuertes se disocian sin reacción inversa y por lo tanto sin equilibrio químico. Todas las reacciones son de disociación. 
+
+Cabe destacar la auto ionización de la agua:
+\begin{equation*}
+	\ce{H2O_{(l)} <=> H_{(aq)}^+ + OH^-_{(aq)}}
+\end{equation*}
+
+\pagebreak
+También hay que mencionar las reacciones con las bases conjugadas o ácidos conjugados: 
+
+\begin{itemize}
+\item Ácido Conjugado:
+\begin{equation*}
+	\ce{HA_{(aq)} + H2O_{(l)} <=> A^-_{(aq)} + H3O^{+}_{(aq)}}
+\end{equation*}
+
+\item Base Conjugada:
+\begin{equation*}
+	\ce{B_{(aq)} + H2O_{(l)} <=> BH^+_{(aq)} + OH^-_{(aq)}}
+\end{equation*}
+\end{itemize}
+
+Pero a grandes rasgos:
+\begin{itemize}
+\item Un \textbf{ácido} es toda sustancia que puede ceder protones.
+\item Una \textbf{base} es toda sustancia que puede aceptar protones. 
+\end{itemize}
+
+\subsubsection{Constantes de acidez y de basicidad}
+Al igual que con los equilibrios que hemos visto anteriormente, los equilibrios de las reacciones anteriores tiene unas constantes asociadas:
+\begin{itemize}
+\item Constante de basicidad:\\
+Para la reacción de disociación de la base débil siguiente:
+\begin{equation*}
+	\ce{B_{(aq)} + H2O_{(l)} <=> BH^+_{(aq)} + OH^-_{(aq)}}
+\end{equation*}
+Tiene la constantes de basicidad:
+\begin{equation*}
+	K_{b} = \frac{[\ce{BH}^{+}][\ce{OH}^{-}]}{[\ce{B}]}
+\end{equation*}
+
+\item Constante de acidez:\\
+Para la reacción de disociación del ácido débil siguiente:
+\begin{equation*}
+	\ce{HA_{(aq)} + H2O_{(l)} <=> A^-_{(aq)} + H3O^+_{(aq)}}
+\end{equation*}
+Existe una constante de acidez:
+\begin{equation*}
+	K_{a} = \frac{[\ce{A^-}][\ce{H3O^+}]}{[\ce{HA}]}
+\end{equation*}
+
+\end{itemize}
+
+Al multiplicarse estas dos constantes creamos una nueva constante de ionización del agua $K_w$, la cual tiene siempre un valor de $10^{-14}$:
+\begin{equation*}
+	K_{w} = K_{a}(\ce{HA})K_{b}(\ce{A^-}) = \frac{\ce{[A^-][H3O^+]}}{\ce{[HA]}}\frac{\ce{[HA][OH^-]}}{\ce{[A^-]}} = \ce{[H3O^+][OH^-]}
+\end{equation*}
+\begin{equation*}
+	K_{w} = K_{b}(\ce{B})K_{a}(\ce{BH^+}) = \frac{\ce{[BH^+]}\ce{[OH^-]}}{\ce{[B]}} \frac{\ce{[B]}\ce{[H3O^+]}}{\ce{[BH^+]}} = \ce{[H3O^+][OH^-]}
+\end{equation*}
+
+\subsection{Cálculo de pH}
+Sabemos que:
+\begin{equation*}
+	K_{w} = \ce{[H3O^+][OH^-]} = 10^{-14}
+\end{equation*}
+Por lo tanto:
+\begin{equation*}
+	\Rightarrow [\ce{H3O^+}] = \frac{K_{w}}{\ce{[OH^-]}}
+\end{equation*}
+
+Y a partir de esta concentración es como se puede obtener el pH, ya que:
+\begin{equation*}
+	\ce{pH} = -\log[\ce{H3O^+}]
+\end{equation*}
+
+O alternativamente:
+\begin{equation*}
+	\ce{pH} = 14 - \log[\ce{OH^-}]
+\end{equation*}
+
+\pagebreak
+
+\subsection{Valoración $\ce{pH}$}
+
+\subsection{Regulación $\ce{pH}$}
+
+\subsection{Caracterización de Disoluciones}
 
 
 

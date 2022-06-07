@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.12.18)  6 JUN 2022 19:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.12.18)  7 JUN 2022 15:57
 entering extended mode
-**./castellano.tex
-(castellano.tex
+**./historia.tex
+(historia.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-03-06>
 ("C:\Program Files\MiKTeX 2.9\tex/latex/base\article.cls"
@@ -116,8 +116,8 @@ File: switch.def 2020/02/28 3.41 Babel switching mechanism
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/babel-spanish\spanish.ldf"
-Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
+("C:\Program Files\MiKTeX 2.9\tex/latex/babel-catalan\catalan.ldf"
+Language: catalan 2005/03/29 v2.2p Catalan support from the babel system
 
 ("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.def"
 File: babel.def 2020/02/28 3.41 Babel common definitions
@@ -128,27 +128,24 @@ File: babel.def 2020/02/28 3.41 Babel common definitions
 \bbl@readstream=\read2
 \bbl@dirlevel=\count184
 )
-\es@quottoks=\toks19
-\es@quotdepth=\count185
-Package babel Info: Making " an active character on input line 561.
-Package babel Info: Making . an active character on input line 662.
-Package babel Info: Making < an active character on input line 707.
-Package babel Info: Making > an active character on input line 707.
+Package babel Info: Making " an active character on input line 91.
+Warning: You are using encoding OT1 instead of T1.
+Some word breaks will not be found.
+\leftllkern=\dimen153
+\rightllkern=\dimen154
+\raiselldim=\dimen155
 ))
 ("C:\Program Files\MiKTeX 2.9\tex/latex/l3backend\l3backend-pdfmode.def"
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count186
+\l__kernel_color_stack_int=\count185
 \l__pdf_internal_box=\box47
 )
 
 LaTeX Warning: Unused global option(s):
     [arial,print].
 
-(castellano.aux
-LaTeX Info: Redefining \. on input line 7.
-LaTeX Info: Redefining \% on input line 7.
-)
-\openout1 = `castellano.aux'.
+(historia.aux)
+\openout1 = `historia.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
@@ -171,17 +168,17 @@ File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
 ("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count187
-\scratchdimen=\dimen153
+\scratchcounter=\count186
+\scratchdimen=\dimen156
 \scratchbox=\box48
-\nofMPsegments=\count188
-\nofMParguments=\count189
-\everyMPshowfont=\toks20
-\MPscratchCnt=\count190
-\MPscratchDim=\dimen154
-\MPnumerator=\count191
-\makeMPintoPDFobject=\count192
-\everyMPtoPDFconversion=\toks21
+\nofMPsegments=\count187
+\nofMParguments=\count188
+\everyMPshowfont=\toks19
+\MPscratchCnt=\count189
+\MPscratchDim=\dimen157
+\MPnumerator=\count190
+\makeMPintoPDFobject=\count191
+\everyMPtoPDFconversion=\toks20
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 
@@ -254,72 +251,31 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \. on input line 18.
-LaTeX Info: Redefining \% on input line 18.
+LaTeX Info: Redefining \l on input line 18.
+LaTeX Info: Redefining \L on input line 18.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 20.
+(Font)              <12> on input line 19.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 20.
+(Font)              <8> on input line 19.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 20.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 38.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 38.
+(Font)              <6> on input line 19.
 [1
 
 {C:/Users/usuario/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-<figures/antecedente.jpg, id=7, 602.25pt x 150.5625pt>
-File: figures/antecedente.jpg Graphic file (type jpg)
-<use figures/antecedente.jpg>
-Package pdftex.def Info: figures/antecedente.jpg  used on input line 51.
-(pdftex.def)             Requested size: 386.95897pt x 96.74332pt.
-<figures/referente.jpg, id=8, 911.65594pt x 88.07906pt>
-File: figures/referente.jpg Graphic file (type jpg)
-<use figures/referente.jpg>
-Package pdftex.def Info: figures/referente.jpg  used on input line 61.
-(pdftex.def)             Requested size: 386.95897pt x 37.38672pt.
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 6
-8.
-
-("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ts1phv.fd"
-File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
-)
-LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 69.
-
-Overfull \hbox (21.45796pt too wide) in paragraph at lines 85--86
-\OT1/phv/m/n/10 En es-ta pre-gun-ta, pien-so que con-vie-ne agru-par las fi-gu-
-ras seg[]un su pa-re-ci-do (e.g. anadi-plo-sis/epanadiplosis),
- []
-
-[2 <./figures/antecedente.jpg> <./figures/referente.jpg>]
-<figures/cuadro_argumentos.jpg, id=14, 603.0028pt x 272.51813pt>
-File: figures/cuadro_argumentos.jpg Graphic file (type jpg)
-<use figures/cuadro_argumentos.jpg>
-Package pdftex.def Info: figures/cuadro_argumentos.jpg  used on input line 106.
-
-(pdftex.def)             Requested size: 338.58632pt x 153.01662pt.
- [3 <./figures/cuadro_argumentos.jpg>] [4] (castellano.aux
-LaTeX Info: Redefining \. on input line 7.
-LaTeX Info: Redefining \% on input line 7.
-) ) 
+(historia.aux) ) 
 Here is how much of TeX's memory you used:
- 4611 strings out of 480934
- 73511 string characters out of 2909675
- 330352 words of memory out of 3000000
- 20413 multiletter control sequences out of 15000+200000
- 556785 words of font info for 59 fonts, out of 3000000 for 9000
+ 4162 strings out of 480934
+ 67260 string characters out of 2909675
+ 317788 words of memory out of 3000000
+ 19986 multiletter control sequences out of 15000+200000
+ 540354 words of font info for 39 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,8n,47p,586b,427s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/u
-rw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uh
-vro8a.pfb>
-Output written on castellano.pdf (4 pages, 144061 bytes).
+ 46i,6n,47p,354b,187s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on historia.pdf (1 page, 7535 bytes).
 PDF statistics:
- 35 PDF objects out of 1000 (max. 8388607)
+ 11 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
