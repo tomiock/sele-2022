@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.12.18)  7 JUN 2022 15:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.12.18)  8 JUN 2022 00:17
 entering extended mode
 **./quimica.tex
 (quimica.tex
@@ -576,7 +576,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 657--659
 
  []
 
-[14 <./figures/tabla_Kc.jpg> <./figures/tabla2_Kc.jpg>] [15] [16] (quimica.aux
+[14 <./figures/tabla_Kc.jpg> <./figures/tabla2_Kc.jpg>] [15]
+Overfull \hbox (1.61078pt too wide) in paragraph at lines 819--822
+[]\OT1/phv/m/n/10 Amb $[]$. Es pot afe-
+ []
+
+[16] (quimica.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 ) ) 
@@ -606,7 +611,7 @@ y7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C
 :/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on quimica.pdf (16 pages, 981905 bytes).
+Output written on quimica.pdf (16 pages, 984929 bytes).
 PDF statistics:
  146 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
