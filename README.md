@@ -16,3 +16,5 @@ Estos apuntes estan hechos de acuerdo con los exámenes de selectividad de catal
 [CASTELLANO](https://github.com/tomiock/sele-2022/blob/main/castellano/castellano.pdf)
 
 [CATALÁN](https://github.com/tomiock/sele-2022/blob/main/catalan/catalan.pdf)
+
+[HÍSTORIA](https://github.com/tomiock/sele-2022/blob/main/historia/historia.pdf)
