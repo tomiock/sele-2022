@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.12.18)  8 JUN 2022 00:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.12.18)  8 JUN 2022 22:55
 entering extended mode
 **./quimica.tex
 (quimica.tex
@@ -581,15 +581,21 @@ Overfull \hbox (1.61078pt too wide) in paragraph at lines 819--822
 []\OT1/phv/m/n/10 Amb $[]$. Es pot afe-
  []
 
-[16] (quimica.aux
+[16]
+<figures/tabla_s.jpg, id=86, 169.38281pt x 63.98906pt>
+File: figures/tabla_s.jpg Graphic file (type jpg)
+<use figures/tabla_s.jpg>
+Package pdftex.def Info: figures/tabla_s.jpg  used on input line 863.
+(pdftex.def)             Requested size: 145.11053pt x 54.82153pt.
+ [17 <./figures/tabla_s.jpg>] (quimica.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 ) ) 
 Here is how much of TeX's memory you used:
- 10407 strings out of 480934
- 199016 string characters out of 2909675
- 554904 words of memory out of 3000000
- 26088 multiletter control sequences out of 15000+200000
+ 10417 strings out of 480934
+ 199206 string characters out of 2909675
+ 554914 words of memory out of 3000000
+ 26097 multiletter control sequences out of 15000+200000
  564130 words of font info for 96 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  52i,15n,76p,737b,659s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -611,9 +617,9 @@ y7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C
 :/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on quimica.pdf (16 pages, 984929 bytes).
+Output written on quimica.pdf (17 pages, 993415 bytes).
 PDF statistics:
- 146 PDF objects out of 1000 (max. 8388607)
+ 150 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 

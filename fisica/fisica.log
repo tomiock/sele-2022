@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.12.18)  7 JUN 2022 20:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.12.18)  8 JUN 2022 17:34
 entering extended mode
 **./fisica.tex
 (fisica.tex
@@ -351,27 +351,27 @@ LaTeX Info: Redefining \% on input line 7.
 )
 \openout1 = `fisica.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
 LaTeX Font Info:    Trying to load font information for OT1+phv on input line 2
-9.
+8.
  ("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ot1phv.fd"
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
 
-Package chemgreek Info: Activating mapping `default' on line 29.
+Package chemgreek Info: Activating mapping `default' on line 28.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
@@ -466,14 +466,14 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \. on input line 29.
-LaTeX Info: Redefining \% on input line 29.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 29.
+LaTeX Info: Redefining \. on input line 28.
+LaTeX Info: Redefining \% on input line 28.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 28.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 29.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 28.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
@@ -482,7 +482,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <figures/meme_MHS.jpg, id=1, 388.45125pt x 193.47281pt>
 File: figures/meme_MHS.jpg Graphic file (type jpg)
 <use figures/meme_MHS.jpg>
-Package pdftex.def Info: figures/meme_MHS.jpg  used on input line 40.
+Package pdftex.def Info: figures/meme_MHS.jpg  used on input line 39.
 (pdftex.def)             Requested size: 145.11053pt x 72.27461pt.
  [1
 
@@ -492,17 +492,17 @@ Package pdftex.def Info: figures/meme_MHS.jpg  used on input line 40.
 <figures/Energia_MAS.png, id=23, 400.49625pt x 182.6825pt>
 File: figures/Energia_MAS.png Graphic file (type png)
 <use figures/Energia_MAS.png>
-Package pdftex.def Info: figures/Energia_MAS.png  used on input line 150.
+Package pdftex.def Info: figures/Energia_MAS.png  used on input line 149.
 (pdftex.def)             Requested size: 241.84843pt x 110.31836pt.
 <figures/onda-reflejada.jpg, id=25, 283.81032pt x 128.73094pt>
 File: figures/onda-reflejada.jpg Graphic file (type jpg)
 <use figures/onda-reflejada.jpg>
-Package pdftex.def Info: figures/onda-reflejada.jpg  used on input line 159.
+Package pdftex.def Info: figures/onda-reflejada.jpg  used on input line 158.
 (pdftex.def)             Requested size: 193.47578pt x 87.7598pt.
 <figures/refraccion-ondas1.jpg, id=26, 470.50781pt x 218.31563pt>
 File: figures/refraccion-ondas1.jpg Graphic file (type jpg)
 <use figures/refraccion-ondas1.jpg>
-Package pdftex.def Info: figures/refraccion-ondas1.jpg  used on input line 171.
+Package pdftex.def Info: figures/refraccion-ondas1.jpg  used on input line 170.
 
 (pdftex.def)             Requested size: 241.84843pt x 112.21893pt.
  [3 <./figures/Energia_MAS.png> <./figures/onda-reflejada.jpg> <./figures/refra
@@ -510,33 +510,33 @@ ccion-ondas1.jpg>]
 <figures/difraccion-ondas.jpg, id=31, 445.665pt x 225.84375pt>
 File: figures/difraccion-ondas.jpg Graphic file (type jpg)
 <use figures/difraccion-ondas.jpg>
-Package pdftex.def Info: figures/difraccion-ondas.jpg  used on input line 189.
+Package pdftex.def Info: figures/difraccion-ondas.jpg  used on input line 188.
 (pdftex.def)             Requested size: 241.84843pt x 122.5603pt.
  [4 <./figures/difraccion-ondas.jpg>]
 <figures/onda-estacionaria-cuerda-fija.jpg, id=36, 617.30624pt x 523.9575pt>
 File: figures/onda-estacionaria-cuerda-fija.jpg Graphic file (type jpg)
 <use figures/onda-estacionaria-cuerda-fija.jpg>
 Package pdftex.def Info: figures/onda-estacionaria-cuerda-fija.jpg  used on inp
-ut line 228.
+ut line 227.
 (pdftex.def)             Requested size: 290.22107pt x 246.34001pt.
  [5 <./figures/onda-estacionaria-cuerda-fija.jpg>]
 <figures/efecto-doppler-2.jpg, id=40, 117.22726pt x 69.61124pt>
 File: figures/efecto-doppler-2.jpg Graphic file (type jpg)
 <use figures/efecto-doppler-2.jpg>
-Package pdftex.def Info: figures/efecto-doppler-2.jpg  used on input line 298.
+Package pdftex.def Info: figures/efecto-doppler-2.jpg  used on input line 297.
 (pdftex.def)             Requested size: 241.84843pt x 143.62271pt.
  [6 <./figures/efecto-doppler-2.jpg>]
 <figures/elipse_esquema.png, id=47, 770.88pt x 439.6425pt>
 File: figures/elipse_esquema.png Graphic file (type png)
 <use figures/elipse_esquema.png>
-Package pdftex.def Info: figures/elipse_esquema.png  used on input line 318.
+Package pdftex.def Info: figures/elipse_esquema.png  used on input line 317.
 (pdftex.def)             Requested size: 193.47578pt x 110.33969pt.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <8> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 329.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 328.
 <figures/segunda-ley-kepler.jpg, id=48, 439.6425pt x 250.9375pt>
 File: figures/segunda-ley-kepler.jpg Graphic file (type jpg)
 <use figures/segunda-ley-kepler.jpg>
-Package pdftex.def Info: figures/segunda-ley-kepler.jpg  used on input line 343
+Package pdftex.def Info: figures/segunda-ley-kepler.jpg  used on input line 342
 .
 (pdftex.def)             Requested size: 241.84843pt x 138.03902pt.
  [7 <./figures/segunda-ley-kepler.jpg> <./figures/elipse_esquema.png>]
@@ -544,7 +544,7 @@ Package pdftex.def Info: figures/segunda-ley-kepler.jpg  used on input line 343
 File: figures/energia-mecanica-negativa.png Graphic file (type png)
 <use figures/energia-mecanica-negativa.png>
 Package pdftex.def Info: figures/energia-mecanica-negativa.png  used on input l
-ine 396.
+ine 395.
 (pdftex.def)             Requested size: 290.22107pt x 116.9847pt.
 
 
@@ -554,7 +554,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: figures/energia-mecanica-nula.png Graphic file (type png)
 <use figures/energia-mecanica-nula.png>
 Package pdftex.def Info: figures/energia-mecanica-nula.png  used on input line 
-405.
+404.
 (pdftex.def)             Requested size: 290.22107pt x 116.9847pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -564,21 +564,21 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: figures/energia-mecanica-positiva.png Graphic file (type png)
 <use figures/energia-mecanica-positiva.png>
 Package pdftex.def Info: figures/energia-mecanica-positiva.png  used on input l
-ine 415.
+ine 414.
 (pdftex.def)             Requested size: 290.22107pt x 116.9847pt.
  [9 <./figures/energia-mecanica-negativa.png> <./figures/energia-mecanica-nula.
 png> <./figures/energia-mecanica-positiva.png>] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 511--512
+Underfull \hbox (badness 10000) in paragraph at lines 510--511
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 516--517
+Underfull \hbox (badness 10000) in paragraph at lines 515--516
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 521--522
+Underfull \hbox (badness 10000) in paragraph at lines 520--521
 
  []
 
@@ -587,36 +587,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 521--522
 File: figures/potencial-e-intensidad.png Graphic file (type png)
 <use figures/potencial-e-intensidad.png>
 Package pdftex.def Info: figures/potencial-e-intensidad.png  used on input line
- 625.
+ 624.
 (pdftex.def)             Requested size: 290.22107pt x 119.82707pt.
 <figures/sintesis-electromagnetica.jpg, id=84, 600.2425pt x 292.09125pt>
 File: figures/sintesis-electromagnetica.jpg Graphic file (type jpg)
 <use figures/sintesis-electromagnetica.jpg>
 Package pdftex.def Info: figures/sintesis-electromagnetica.jpg  used on input l
-ine 642.
+ine 641.
 (pdftex.def)             Requested size: 193.47578pt x 94.14856pt.
  [14 <./figures/potencial-e-intensidad.png> <./figures/sintesis-electromagnetic
 a.jpg>]
 <figures/particula_con_B.jpg, id=90, 973.38657pt x 344.78813pt>
 File: figures/particula_con_B.jpg Graphic file (type jpg)
 <use figures/particula_con_B.jpg>
-Package pdftex.def Info: figures/particula_con_B.jpg  used on input line 670.
+Package pdftex.def Info: figures/particula_con_B.jpg  used on input line 669.
 (pdftex.def)             Requested size: 338.58632pt x 119.93057pt.
  [15 <./figures/particula_con_B.jpg>]
 <figures/magnetico_linea.jpg, id=94, 301.8778pt x 244.66406pt>
 File: figures/magnetico_linea.jpg Graphic file (type jpg)
 <use figures/magnetico_linea.jpg>
-Package pdftex.def Info: figures/magnetico_linea.jpg  used on input line 706.
+Package pdftex.def Info: figures/magnetico_linea.jpg  used on input line 705.
 (pdftex.def)             Requested size: 241.84843pt x 196.01149pt.
 <figures/espira.jpg, id=95, 265.74281pt x 176.15813pt>
 File: figures/espira.jpg Graphic file (type jpg)
 <use figures/espira.jpg>
-Package pdftex.def Info: figures/espira.jpg  used on input line 734.
+Package pdftex.def Info: figures/espira.jpg  used on input line 733.
 (pdftex.def)             Requested size: 241.84843pt x 160.32295pt.
 <figures/solenoide.jpg, id=96, 208.52907pt x 258.21469pt>
 File: figures/solenoide.jpg Graphic file (type jpg)
 <use figures/solenoide.jpg>
-Package pdftex.def Info: figures/solenoide.jpg  used on input line 741.
+Package pdftex.def Info: figures/solenoide.jpg  used on input line 740.
 (pdftex.def)             Requested size: 120.92421pt x 149.73703pt.
  [16 <./figures/magnetico_linea.jpg>] [17 <./figures/espira.jpg> <./figures/sol
 enoide.jpg>]
@@ -654,7 +654,7 @@ MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helv
 etic/uhvro8a.pfb>
-Output written on fisica.pdf (17 pages, 774100 bytes).
+Output written on fisica.pdf (17 pages, 774099 bytes).
 PDF statistics:
  175 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
