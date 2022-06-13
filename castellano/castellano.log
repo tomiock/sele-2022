@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.12.18)  13 JUN 2022 13:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.12.18)  13 JUN 2022 22:25
 entering extended mode
 **./castellano.tex
 (castellano.tex
@@ -288,7 +288,7 @@ File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10> not available
 (Font)              Font shape `OT1/phv/m/sl' tried instead on input line 69.
 
-Overfull \hbox (21.45796pt too wide) in paragraph at lines 85--86
+Overfull \hbox (21.45796pt too wide) in paragraph at lines 89--90
 \OT1/phv/m/n/10 En es-ta pre-gun-ta, pien-so que con-vie-ne agru-par las fi-gu-
 ras seg[]un su pa-re-ci-do (e.g. anadi-plo-sis/epanadiplosis),
  []
@@ -297,10 +297,10 @@ ras seg[]un su pa-re-ci-do (e.g. anadi-plo-sis/epanadiplosis),
 <figures/cuadro_argumentos.jpg, id=14, 603.0028pt x 272.51813pt>
 File: figures/cuadro_argumentos.jpg Graphic file (type jpg)
 <use figures/cuadro_argumentos.jpg>
-Package pdftex.def Info: figures/cuadro_argumentos.jpg  used on input line 106.
+Package pdftex.def Info: figures/cuadro_argumentos.jpg  used on input line 122.
 
 (pdftex.def)             Requested size: 338.58632pt x 153.01662pt.
- [3 <./figures/cuadro_argumentos.jpg>] [4] (castellano.aux
+ [3 <./figures/cuadro_argumentos.jpg>] [4] [5] (castellano.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 ) ) 
@@ -313,13 +313,14 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  46i,8n,47p,586b,427s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/u
-rw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uh
-vro8a.pfb>
-Output written on castellano.pdf (4 pages, 144743 bytes).
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helve
+tic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pf
+b>
+Output written on castellano.pdf (5 pages, 155568 bytes).
 PDF statistics:
- 35 PDF objects out of 1000 (max. 8388607)
+ 42 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
